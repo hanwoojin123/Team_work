@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/*	==============================================================================	*/
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  store.css   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/*	==============================================================================	*/
+
+
+/* ============================= Mobile (start) ============================= */
+@media screen and (max-width: 767px) {
+
+
+	section.visual { overflow-x: clip; overflow-y: visible; position: relative; width: 100%; height: 100vh; z-index: -1; }
+	section.visual > div.bg_wrap { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+    section.visual > div.bg_wrap > img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+	section.visual > div.info_wrap { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; padding: 0 4.6875vw; text-align: center; }
+	section.visual > div.info_wrap > h2 { font-size: 3.75em; margin-bottom:  0.5em; opacity: 0.4; }
+	section.visual > div.info_wrap > p.title { font-family: "NotoSansKR-Medium"; font-size: 0.9375em; padding: 0 ;  word-break: keep-all; }
+
+	section.content { padding: 0 0.94em 7.5em; z-index: -1; }
+	section.content div.con_wrap { position: relative; max-width: 1360px; width: 100%; margin: 0 auto; }
+	section.content div.con_wrap { margin-bottom: 5em; }
+	section.content div.con_wrap:nth-of-type(3) { margin-bottom: 0; }
+	section.content div.view_mask { max-width: 1360px; width:100%; margin: 0 auto; padding-bottom: 30px; }
+
+	section.content div.con_wrap  h3 { margin-bottom: 0.74em; font-family: "CormorantGaramond-Bold"; font-size: 1.69em; text-align: center; }
+
+	section.content div.view_mask > ul.best { width: 800%; }
+	section.content div.view_mask > ul.best > li { float: left; width: calc(100% / 8); padding: 0 10px; }
+	section.content div.view_mask > ul.high { width: 700%; }
+	section.content div.view_mask > ul.high > li { float: left; width: calc(100% / 7); padding: 0 10px; }
+	section.content div.view_mask > ul.low { width: 1400%; }
+	section.content div.view_mask > ul.low > li { float: left; width: calc(100% / 14); padding: 0 10px; }
+
+	section.content div.view_mask div.img_wrap { position: relative; overflow: hidden; width: 100%; margin-bottom: 20px; background: #fff; }
+	section.content div.view_mask div.img_wrap > a { display: block; width: 100%; height: 100%; text-align: center; }
+	section.content div.view_mask div.img_wrap > a > img.item { width: auto; height: 75%; max-height: 327px; position: absolute; top: 58%; left: 52.5%; transform: translate(-50%, -50%); }
+	section.content div.view_mask div.img_wrap > a > img.bg { width: 100%; max-width: 410px; height: 100%; object-fit: cover; }
+
+	section.content div.view_mask div.info_wrap > p.item_name { margin-bottom: 10px; }
+	section.content div.view_mask div.info_wrap > p.item_name > a { font-family: "NotoSansKR-Bold"; font-size: 1em; }
+	section.content div.view_mask div.info_wrap > p.price { color: #707070; font-family: "NotoSansKR-Bold"; }
+	section.content div.view_mask div.info_wrap > p.price > span { font-size: 0.88em; margin-left: 3px; }
+    
+    section.content div.view_mask div.new::before { content: "NEW"; position: absolute; display: block; top: 10px; left: 10px; border: 1px solid #ff9900; color: #ff9900; padding: 0 10px 1px; font-family: "NotoSansKR-Medium"; }
+
+	section.content div.view_mask div.info_wrap span.best { display: inline-block; margin-left: 5px; padding: 0 3px 1.5px; background: #ff3333; color: #fff; font-family: "NotoSansKR-Medium"; font-size: 0.625em; transform: translate(0, -2px); }
+	section.content div.view_mask div.info_wrap span.recommend { display: inline-block; margin-left: 5px; padding: 0 3px 1px; background: #4d9ed4; color: #fff; font-family: "NotoSansKR-Medium"; font-size: 0.625em; transform: translate(0, -2.5px); }
+
+	section.content .dir_btn { position: absolute; }
+	section.content .dir_btn[class~="prev"] { left: 4.5%; bottom: -10px; }
+	section.content .dir_btn[class~="next"] { right: 4.5%; bottom: -10px; }
+	section.content .dir_btn > span { width: 40px; height: 8px; background: #333; }
+
+
+}
+/* ============================== Mobile (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Tablet (start) ============================= */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+	section.visual { overflow-x: clip; overflow-y: visible; position: relative; width: 100%; height: 100vh; z-index: -1; }
+	section.visual > div.bg_wrap { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+    section.visual > div.bg_wrap > img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+	section.visual > div.info_wrap { position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); width:100%; text-align: center; }
+	section.visual > div.info_wrap > h2 { font-size: 8.125em; margin-bottom: 0.3846em; opacity: 0.4; }
+	section.visual > div.info_wrap > p.title { width: 100%; font-family: "NotoSansKR-Medium"; font-size: 1.25em;  word-break: keep-all; }
+
+	section.content { padding: 0 1.75em 12.5em; z-index: 1; }
+	section.content div.con_wrap { position: relative; max-width: 1360px; width: 100%; margin: 0 auto; }
+	section.content div.con_wrap { margin-bottom: 9.38em; }
+	section.content div.con_wrap:nth-of-type(3) { margin-bottom: 0; }
+	section.content div.view_mask { max-width: 1360px; width:100%; margin: 0 auto; padding-bottom: 30px; }
+
+	section.content div.con_wrap  h3 { margin-bottom: 1em; font-family: "CormorantGaramond-Bold"; font-size: 2.19em; text-align: center; }
+
+	section.content div.view_mask > ul.best { width: 266.666%; }
+	section.content div.view_mask > ul.best > li { float: left; width: calc(100% / 8); padding: 0 10px; }
+	section.content div.view_mask > ul.high { width: 233.333%; }
+	section.content div.view_mask > ul.high > li { float: left; width: calc(100% / 7); padding: 0 10px; }
+	section.content div.view_mask > ul.low { width: 466.666%; }
+	section.content div.view_mask > ul.low > li { float: left; width: calc(100% / 14); padding: 0 10px; }
+
+	section.content div.view_mask div.img_wrap { position: relative; overflow: hidden; margin-bottom: 20px; background: #fff; }
+	section.content div.view_mask div.img_wrap > a { display: block; width: 100%; height: 100%; text-align: center; }
+	section.content div.view_mask div.img_wrap > a > img.item { width: auto; height: 80%; position: absolute; top: 55%; left: 52.5%; transform: translate(-50%, -50%); }
+	section.content div.view_mask div.img_wrap > a > img.bg { width: 100%; height: 100%; object-fit: cover; }
+
+	section.content div.view_mask div.info_wrap > p.item_name { position: relative; margin-bottom: 10px; }
+	section.content div.view_mask div.info_wrap > p.item_name > a { font-family: "NotoSansKR-Bold"; font-size:  1.125em; }
+	section.content div.view_mask div.info_wrap > p.price { color: #707070; font-family: "NotoSansKR-Bold"; font-size: 1.125em; }
+	section.content div.view_mask div.info_wrap > p.price > span { font-size: 0.8888em; margin-left: 3px; }
+    
+    section.content div.view_mask div.new::before { content: "NEW"; position: absolute; display: block; top: 10px; left: 10px; border: 1px solid #ff9900; color: #ff9900; padding: 0 10px 1.5px; font-family: "NotoSansKR-Medium"; }
+
+	section.content div.view_mask div.info_wrap span.best { display: inline-block; margin-left: 5px; padding: 0 3px 1px; background: #ff3333; color: #fff; font-family: "NotoSansKR-Medium"; font-size: 0.75em; transform: translate(0, -2.5px); }
+	section.content div.view_mask div.info_wrap span.recommend { display: inline-block; margin-left: 5px; padding: 0 3px 1px; background: #4d9ed4; color: #fff; font-family: "NotoSansKR-Medium"; font-size: 0.75em; transform: translate(0, -2.5px); }
+
+	section.content .dir_btn { position: absolute; }
+	section.content .dir_btn[class~="prev"] { left: 4.5%; bottom: -20px; }
+	section.content .dir_btn[class~="next"] { right: 4.5%; bottom: -20px; }
+	section.content .dir_btn > span { width: 60px; height: 12px; background: #333; }
+
+
+}
+/* ============================== Tablet (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Desktop (start) ============================= */
+@media screen and (min-width: 1025px){
+
+
+	section.visual { overflow-x: clip; overflow-y: visible; position: relative; width: 100%; height: 100vh; z-index: -1; }
+	section.visual > div.bg_wrap { position: absolute; top: 0; left: 0; width: 100%; z-index: -1; }
+    section.visual > div.bg_wrap > img { display: block; width: 100%; height: 100%; object-fit: cover; transform: translate(-2%, -22%) }
+
+	section.visual > div.info_wrap { position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+	section.visual > div.info_wrap > h2 { font-size: 18.125em; opacity: 0.4; }
+	section.visual > div.info_wrap > p.title { font-family: "NotoSansKR-Medium"; font-size: 1.5em;  word-break: keep-all; }
+
+	section.content { padding: 6.25em 0 18.75em; z-index: 1; }
+	section.content > div.con_wrap { position: relative; max-width: 1360px; width: 100%; margin: 0 auto 12.5em; }
+	section.content > div.con_wrap:nth-of-type(3) { margin-bottom: 0; }
+	section.content div.view_mask { max-width: 1360px; width:100%; margin: 0 auto; padding-bottom: 50px; }
+
+	section.content > div.con_wrap  h3 { margin: 0 0 0.8571em 0.5714em; font-family: "CormorantGaramond-Bold"; font-size: 2.5em; }
+
+	section.content div.view_mask > ul.best { width: 200%; }
+	section.content div.view_mask > ul.best > li { float: left; width: calc(100% / 8); padding: 0 20px; }
+	section.content div.view_mask > ul.high { width: 175%; }
+	section.content div.view_mask > ul.high > li { float: left; width: calc(100% / 7); padding: 0 20px; }
+	section.content div.view_mask > ul.low { width: 350%; }
+	section.content div.view_mask > ul.low > li { float: left; width: calc(100% / 14); padding: 0 20px; }
+
+	section.content div.view_mask div.img_wrap { position: relative; overflow: hidden; margin-bottom: 20px; background: #fff; }
+	section.content div.view_mask div.img_wrap > a { display: block; width: 100%; height: 100%; text-align: center; }
+	section.content div.view_mask div.img_wrap > a > img.item { width: auto; height: 80%; position: absolute; top: 55%; left: 52.5%; transform: translate(-50%, -50%); }
+	section.content div.view_mask div.img_wrap > a > img.bg { width: 100%; height: 100%; object-fit: cover; }
+
+	section.content div.view_mask div.info_wrap > p.item_name { position: relative; display: block; margin-bottom: 10px; }
+	section.content div.view_mask div.info_wrap > p.item_name > a { font-family: "NotoSansKR-Bold"; font-size: 1.25em; }
+	section.content div.view_mask div.info_wrap > p.price { color: #707070; font-family: "NotoSansKR-Bold"; font-size: 1.25em; }
+	section.content div.view_mask div.info_wrap > p.price > span { font-size: 0.8em; margin-left: 3px; }
+
+	section.content div.view_mask div.new::before { content: "NEW"; position: absolute; display: block; top: 10px; left: 10px; border: 1px solid #ff9900; color: #ff9900; padding: 0 10px 1.5px; font-family: "NotoSansKR-Medium"; }
+
+	section.content div.view_mask div.info_wrap span.best { display: inline-block; margin-left: 5px; padding: 0 5px 1px; background: #ff3333; color: #fff; font-family: "NotoSansKR-Medium"; font-size: 0.75em; transform: translate(0, -3px); }
+	section.content div.view_mask div.info_wrap span.recommend { display: inline-block; margin-left: 5px; padding: 0 5px 1.5px; background: #4d9ed4; color: #fff; font-family: "NotoSansKR-Medium"; font-size: 0.75em; transform: translate(0, -3.5px); }
+
+	section.content .dir_btn { position: absolute; }
+	section.content .dir_btn[class~="prev"] { left: 4.5%; bottom: -20px; }
+	section.content .dir_btn[class~="next"] { right: 4.5%; bottom: -20px; }
+	section.content .dir_btn > span { width: 80px; height: 16px; background: #333; }
+
+}
+/* ============================== Desktop (end) ============================== */

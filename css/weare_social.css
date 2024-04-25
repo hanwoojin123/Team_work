@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+/*	==============================================================================	*/
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      		   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    social.css   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      		   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/*	==============================================================================	*/
+
+
+section.visual { width: 100%; height: 100vh; }
+
+section.visual h2::before { content: ""; position: absolute; transform: translate(-40%, -15%); z-index: -1; display: inline-block; background: url("../images/img_index_nav_hover@2x.png") no-repeat; background-size: 100%; }
+
+
+/* ============================= Mobile (start) ============================= */
+@media screen and (max-width: 767px) {
+
+	._S { font-size: 0.875rem; }
+
+	h2 { font-size: 2em; }
+
+	.btns_wrap { display: none; }
+	.M_none { display: none; }
+
+	.btn_more { padding: 0.3em 1.2em 0.5em; }
+	
+	section.visual h2 { margin-top: 19.7183vh; font-size: 3em; }
+	section.visual h2::before { width: 1.571428em; height: 1.571428em; }
+
+	section.visual .img_wrap { width: 100%; height: 25.3521vh; margin: 26px 0 40px; }
+	section.visual .img_wrap img { width: 100%; height: 100%; object-fit: cover; }
+
+	section.visual p.desc_M { font-family: "NotoSansKR-Medium", "NotoSerifSC-Bold"; font-size: 0.9375em; text-align: center; word-break: keep-all; line-height: 1.5; }
+
+	section.visual p.desc_DT { display: none; }
+
+	/* ============================ */
+
+	section.social_con { padding: 120px 0 180px; }
+
+	section.social_con h3 { position: relative; margin-bottom: 60px; text-align: center; font-size: 1.25em; }
+
+	section.social_con h3::before { content: ""; position: absolute; left: 50%; bottom: -60%; z-index: -1; transform: translateX(-50%); display: inline-block; width: 44.82758vw; height: 10.34482vw; background: url("../images/weare_social/img_weare_social_button_hover.png") no-repeat; background-size: 100%; }
+
+
+	section.social_con .div_all > div + div { margin-top: 140px; }
+
+	section.social_con div > ul { display: flex; flex-direction: column; gap: 40px; }
+	section.social_con div > ul > li { overflow: hidden; display: flex; flex-direction: column; flex-wrap: wrap; font-size: 0.875em; text-align: center; }
+
+	section.social_con .title_wrap { flex: 1; order: 0; margin-bottom: 20px; }
+	section.social_con .title_wrap > h4 { padding: 0.3em 0; border-bottom: 1px solid #ccc; font-size: 1.285714em; }
+
+	section.social_con .info_wrap { flex: 1; order: 2; word-break: keep-all; }
+	section.social_con .info_wrap > p.desc { margin-bottom: 20px; }
+	section.social_con .info_wrap > p.desc br { display: none; }
+
+	/*section.social_con .info_wrap .popup_bg { display: none; }
+
+	section.social_con .info_wrap[class ~= "active"] .popup_bg { position: fixed; top: 0; left: 0; z-index: 119; display: block; width: 100%; height: 100vh; padding: 0 5.434782vw; background: rgb(0, 0, 0, 0.6); }
+	section.social_con .info_wrap[class ~= "active"] .btn_wrap { margin-bottom: 10px; text-align: right; }
+	section.social_con .info_wrap[class ~= "active"] .btn_wrap > .close_btn { width: 14px; height: 14px; background: url("../images/weare_social/img_weare_social_close_btn.png") no-repeat; background-size: 100%; vertical-align: middle; }
+	section.social_con .info_wrap[class ~= "active"] .popup { position: fixed; top: 50%; left: 50%; z-index: 120; transform: translate(-50%, -50%); width: 90vw; padding: 10px 10px 20px 10px; background: #fff; text-align: left; line-height: 1.5; text-align: center; word-break: keep-all; }*/
+
+	section.social_con div.main { display: none; }
+
+	section.social_con .img_wrap { flex: 1; order: 1; margin-bottom: 20px; }
+	section.social_con img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+	section.social_con div.youth_upbringing > ul > li:nth-child(1) p.desc { margin: 0; }
+	section.social_con div.youth_upbringing > ul > li:nth-child(2) .flex_wrap { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+
+	section.social_con div.youth_upbringing > ul > li p + p { margin-top: 10px; }
+	section.social_con div.youth_upbringing .item > p.desc { margin-top: 10px; }
+
+	/* ============== popup =============== */
+
+	.popup_box > .popup_bg { position: fixed; top: 0; left: 0; z-index: 119; display: block; width: 100%; height: 100vh; padding: 0 4.6875vw; background: rgb(0, 0, 0, 0.7); }
+
+	.popup_box > .popup_bg .popup { position: relative; width: 100%; height: 100%; }
+
+	.popup_box > .popup_bg .popup > .desc_wrap { position: absolute; top: 50%; left: 50%; z-index: 120; transform: translate(-50%, -50%); width: 100%; padding: 30px 20px; background: #fff; text-align: left; line-height: 1.5; text-align: center; word-break: keep-all; }
+	.popup_box > div:nth-of-type(1) .popup > .desc_wrap { overflow-y: scroll; height: 60vh; }
+
+	.popup_box > .popup_bg .popup > .close_btn { position: absolute; right: 10px; top: 20px; width: 20px; height: 20px; background: url("../images/weare_social/img_weare_social_close_btn.png") no-repeat; background-size: 100%; vertical-align: middle; }
+
+	.popup_box > div.popup_bg { display: none; }
+/*	.popup_box > div:nth-of-type(1) { display: block; }*/
+/* js대입 전까진 팝업 확인하려면 위 코드 주석 풀고 해당 팝업 번호 입력하면 됩니다 + X를 desc box 위로 위치 잡기 어려워서(구조+css 문제상) 햄버거 버튼 쪽으로 아예 고정했어용 */
+
+	
+
+}
+/* ============================== Mobile (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Tablet (start) ============================= */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	
+	._S { font-size: 1rem; }
+
+	h2 { font-size: 3.75em; }
+	/*h3 { display: none; }*/
+
+	.btn_more { display: none; }
+	.popup_bg { display: none; }
+	
+	section.visual h2 { margin-top: 21.484375vh; }
+	section.visual h2::before { width: 1.516em; height: 1.516em; }
+
+	section.visual .img_wrap { width: 100%; height: 24.4140625vh; margin: 40px 0 50px; }
+	section.visual .img_wrap img { width: 100%; height: 100%; object-fit: cover; }
+
+	section.visual .inner_wrap { text-align: center; }
+
+	section.visual p.desc_DT { display: inline-block; width: 95%; font-family: "NotoSansKR-Medium", "NotoSerifSC-Bold"; font-size: 1.25em; text-align: center; word-break: keep-all; line-height: 1.5; }
+
+	section.visual p.desc_M { display: none; }
+
+	/* ============================ */
+
+	section.social_con { overflow: visible; position: sticky; top: 0; padding: 120px 0; }
+
+	section.social_con .btns_wrap { overflow: hidden; position: sticky; top: 0; z-index: 10; /*margin-bottom: 140px;*/ padding: 15px 0 30px; text-align: center; }
+	section.social_con .btns_wrap > button { position: relative; font-size: 3.90625vw; font-family: "NotoSansKR-Medium"; }
+	section.social_con .btns_wrap > button + button { margin-left: 9.8314606vw; }
+
+	section.social_con .btns_wrap > button.active { font-family: "NotoSansKR-Bold"; }
+	section.social_con .btns_wrap > button.active::before { content: ""; position: absolute; left: 0; bottom: -55%; z-index: -1; display: inline-block; width: 28.089887vw; height: 6.3202247vw; background: url("../images/weare_social/img_weare_social_button_hover.png") no-repeat; background-size: 100%; animation-duration: 0.5s; animation-name: opacity; }
+
+	@keyframes opacity {
+		0%{
+			opacity: 0;
+		}
+		100%{
+			opacity: 1;
+		}
+	}
+
+	section.social_con .view_mask { position: relative; margin-top: 140px; }
+
+	section.social_con div > ul { display: flex; flex-direction: column; gap: 80px; }
+	section.social_con div > ul > li { overflow: hidden; display: flex; flex-direction: column; flex-wrap: wrap; font-size: 1.125em; text-align: center; }
+
+	section.social_con .title_wrap { flex: 1; order: 0; margin-bottom: 30px; }
+	section.social_con .title_wrap > h4 { padding: 0.3em 0; border-bottom: 1px solid #ccc; font-size: 1.666666em; }
+
+	section.social_con .info_wrap { flex: 1; order: 2; word-break: keep-all; }
+	section.social_con .info_wrap > p.desc br { display: none; }
+
+	section.social_con .img_wrap { flex: 1; order: 1; margin-bottom: 30px; }
+	section.social_con img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+	section.social_con div.youth_upbringing > ul > li:nth-child(2) .flex_wrap { flex: 1; display: flex; flex-direction: column; gap: 40px; }
+
+	section.social_con div.youth_upbringing > ul > li p + p { margin-top: 10px; }
+	section.social_con div.youth_upbringing .item > p.desc { margin-top: 20px; }
+
+	
+
+
+}
+/* ============================== Tablet (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Desktop (start) ============================= */
+@media screen and (min-width: 1025px){
+	
+	._S { font-size: 1.125rem; }
+
+	h2 { font-size: 3.75em; }
+	/*h3 { display: none; }*//* js 대입할때 뺄게여(blind 처리 해야함) */
+
+	.btn_more { display: none; }
+	.popup_bg { display: none; }
+
+	section.visual h2 { margin-top: 21.0416vh; font-size: 4.5em }
+	section.visual h2::before { width: 1.3333em; height: 1.30555em; }
+
+	section.visual .img_wrap { width: 100%; height: 31.25vh; margin: 40px 0 50px; }
+	section.visual .img_wrap img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+	section.visual p.desc_DT { font-family: "NotoSansKR-Medium", "NotoSerifSC-Bold"; font-size: 1.5em; text-align: center; line-height: 1.5; }
+	section.visual p.desc_M { display: none; }
+
+	/* ============================ */
+
+	section.social_con { overflow: visible; position: sticky; top: 0; /*height: 241.5vh;*/ padding: 200px 0; }
+
+	section.social_con .btns_wrap { position: sticky; top: 0; z-index: 10; /*margin-bottom: 180px;*/ padding: 15px 0 30px; text-align: center; }
+	section.social_con .btns_wrap > button { position: relative; font-size: 2.5vw; font-family: "NotoSansKR-Medium"; }
+	section.social_con .btns_wrap > button + button { margin-left: 9.375vw; }
+
+	section.social_con .btns_wrap > button:hover { font-family: "NotoSansKR-Bold"; }
+	section.social_con .btns_wrap > button:hover::before { content: ""; position: absolute; left: 0; bottom: -30%; z-index: -1; display: inline-block; width: 17.1875vw; height: 3.3854166vw; background: url("../images/weare_social/img_weare_social_button_hover.png") no-repeat; background-size: 100%; animation-duration: 0.5s; animation-name: opacity; }
+
+	section.social_con .btns_wrap > button.active { font-family: "NotoSansKR-Bold"; }
+	section.social_con .btns_wrap > button.active::before { content: ""; position: absolute; left: 0; bottom: -30%; z-index: -1; display: inline-block; width: 17.1875vw; height: 3.3854166vw; background: url("../images/weare_social/img_weare_social_button_hover.png") no-repeat; background-size: 100%; animation-duration: 0.5s; animation-name: opacity; }
+
+	@keyframes opacity {
+		0%{
+			opacity: 0;
+		}
+		100%{
+			opacity: 1;
+		}
+	}
+
+	section.social_con .view_mask { position: relative; margin-top: 180px; }
+
+	section.social_con div > ul { display: flex; flex-direction: column; gap: 80px; }
+	section.social_con div > ul > li { overflow: hidden; display: flex; flex-direction: column; flex-wrap: wrap; align-content: space-between; height: 41.666666vh; /*height: 52.0833333vh;*/ font-size: 1.25em; }
+
+	section.social_con .title_wrap { flex: 1 1 10%; order: 1; width: 40.9375vw; /*width: 51.171875%;*/ }
+	section.social_con .title_wrap > h4 { padding: 2em 0 0.3em; /*padding-bottom: 0.3em;*/ border-bottom: 1px solid #ccc; font-size: 1.8em; }
+
+	section.social_con .info_wrap { overflow-y: auto; flex: 1 1 35%; /*flex: 1 1 70%;*/ order: 2; width: 40.9375vw; /*width: 51.171875%;*/ word-break: keep-all; }
+
+	section.social_con .img_wrap { flex: 1 1 100%; width: 46.22395833%; order: 0; }
+	section.social_con img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+
+	section.social_con div.schol > ul > li:nth-child(even) .title_wrap { order: 0; text-align: right; }
+	section.social_con div.schol > ul > li:nth-child(even) .info_wrap { order: 1; text-align: right; }
+	section.social_con div.schol > ul > li:nth-child(even) .img_wrap { order: 2; }
+
+	section.social_con div.farmhouse > ul > li:nth-child(odd) .title_wrap { order: 0; text-align: right; }
+	section.social_con div.farmhouse > ul > li:nth-child(odd) .info_wrap { order: 1; text-align: right; }
+	section.social_con div.farmhouse > ul > li:nth-child(odd) .img_wrap { order: 2; }
+
+	section.social_con div.youth_upbringing > ul > li:nth-child(2) { gap: 20px; height: auto; }
+	section.social_con div.youth_upbringing > ul > li:nth-child(2) .title_wrap { flex: 1; order: 1; width: 100%; }
+	section.social_con div.youth_upbringing > ul > li:nth-child(2) .title_wrap > h3 { margin: 0; }
+	section.social_con div.youth_upbringing > ul > li:nth-child(2) .flex_wrap { flex: 1; display: flex; flex-direction: row; gap: 24px; order: 2; }
+	section.social_con div.youth_upbringing > ul > li:nth-child(2) .flex_wrap > .item { flex: 1; text-align: center; }
+
+	section.social_con div.youth_upbringing > ul > li p + p { margin-top: 10px; }
+	section.social_con div.youth_upbringing .item > p.desc { margin-top: 20px; }
+	
+
+
+}
+/* ============================== Desktop (end) ============================== */

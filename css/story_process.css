@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+/*	==============================================================================	*/
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  index.css   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/*	==============================================================================	*/
+
+
+/* ==================== Mobile(start) ==================== */
+
+
+@media screen and (max-width: 767px){
+	
+	
+	h2 { font-size: 3em; }
+	h3 > span.num { font-size: 1.714285em; }
+	h3 > span.title { font-size: 1.4285714em; }
+
+	
+	section.visual { width: 100%; height: 100vh; }
+	
+	section.visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
+	
+	section.visual .desc_wrap { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 100%; font-size: 0.875em; text-align: center; }
+
+	section.visual .desc_wrap > p { display: inline-block; padding: 0 4.6875vw; text-align: center; word-break: keep-all; }
+	section.visual .desc_wrap > p.top { width: 95vw; margin-bottom: 50px; }
+
+	section.visual .desc_wrap > p > br { display:none !important; }
+
+	/* ====================================== */
+
+	section.process { padding: 120px 0; }
+	
+	section.process h2 { margin-bottom: 20px; }
+	section.process p.desc { margin-bottom: 60px; font-size: 0.875em; text-align: center; word-break: keep-all; }
+	section.process p.desc > span { display: inline-block; width: 56vw; }
+
+
+	section.process .pro_top { position: relative; width: 280px; margin: 0 auto 120px; text-align: center; }
+
+	section.process .pro_top > img { display: inline-block; width: 80px; object-fit: cover; }
+
+	section.process .pro_top li { position: absolute; font-size: 0.875em; }
+	section.process .pro_top li:nth-child(odd)::before { content: ""; position: absolute; top: 50%; right: 110%; transform: translateY(-50%); display: inline-block; width: 20px; height: 1px; background: #333; }
+	section.process .pro_top li:nth-child(even)::after { content: ""; position: absolute; top: 50%; left: 110%; transform: translateY(-50%); display: inline-block; width: 20px; height: 1px; background: #333; }
+
+
+	section.process .pro_top li:nth-child(1) { right: 10px; top: 20px; }
+	section.process .pro_top li:nth-child(2) { left: 30px; top: 50px; }
+	section.process .pro_top li:nth-child(3) { width: 25%; right: 0; top: 80px; }
+	section.process .pro_top li:nth-child(4) { left: -7px; top: 130px; }
+	section.process .pro_top li:nth-child(5) { right: -2px; bottom: 90px; }
+	section.process .pro_top li:nth-child(6) { left: -2px; bottom: 55px; }
+	section.process .pro_top li:nth-child(7) { width: 20%; right: 15px; bottom: 20px; }
+
+	/* ====================================== */
+	
+	section.process .pro_bottom { position: relative; font-size: 0.875em; }
+
+	section.process .pro_bottom > .bg_wrap { display: none; }
+
+
+	section.process .pro_bottom ul { display: flex; flex-direction: column; gap: 40px; margin-bottom: 80px; }
+	
+	section.process .pro_bottom ul > li { display: flex; flex-direction: column; gap: 10px; }
+
+	section.process .pro_bottom ul > li > .img_wrap { flex: 1; }
+	section.process .pro_bottom ul > li > .img_wrap img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+
+	section.process .pro_bottom ul > li > .info_wrap { flex: 1; display: inline-flex; flex-direction: column; gap: 10px; word-break: keep-all; }
+
+	section.process .pro_bottom ul > li > .info_wrap span.title { margin-left: 5px; }
+	section.process .pro_bottom ul > li > .info_wrap br { display:none !important; }
+
+	section.process .pro_bottom ul > li:nth-child(even) > .info_wrap { text-align: right; }
+	
+	section.process .pro_bottom > .rel > p { text-align: center; word-break: keep-all; }
+	section.process .pro_bottom > .rel > p > br { display:none !important; }
+
+	
+}
+
+
+/* ==================== Mobile(end) ==================== */
+
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* ==================== Tablet(start) ==================== */
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+
+	
+	h2 { font-size: 3.75em; }
+	h3 > span.num { font-size: 1.75em; }
+	h3 > span.title { font-size: 1.25em; }
+
+	
+	section.visual { width: 100%; height: 100vh; }
+	
+	section.visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
+	
+	section.visual .desc_wrap { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 100%; font-size: 1.5em; text-align: center; }
+
+	section.visual .desc_wrap > p { display: inline-block; word-break: keep-all; }
+	section.visual .desc_wrap > p.top { width: 85%; margin-bottom: 50px; }
+	section.visual .desc_wrap > p.bottom { width: 75%; }
+
+
+	/* ====================================== */
+
+	section.process { padding: 200px 0 26.041666vh; }
+	
+	section.process h2 { margin-bottom: 30px; }
+	section.process p.desc { margin-bottom: 100px; font-size: 1.5em; text-align: center; }
+
+
+	section.process .pro_top { position: relative; width: 580px; margin: 0 auto 200px; text-align: center; }
+
+	section.process .pro_top > img { display: inline-block; width: 200px; object-fit: cover; }
+
+	section.process .pro_top li { position: absolute; font-size: 1.5em; }
+	section.process .pro_top li:nth-child(odd)::before { content: ""; position: absolute; top: 50%; right: 110%; transform: translateY(-50%); display: inline-block; width: 50px; height: 2px; background: #333; }
+	section.process .pro_top li:nth-child(even)::after { content: ""; position: absolute; top: 50%; left: 110%; transform: translateY(-50%); display: inline-block; width: 50px; height: 2px; background: #333; }
+
+
+	section.process .pro_top li:nth-child(1) { right: 40px; top: 60px; }
+	section.process .pro_top li:nth-child(2) { left: 60px; top: 150px; }
+	section.process .pro_top li:nth-child(3) { right: -65px; top: 240px; }
+	section.process .pro_top li:nth-child(4) { left: -10px; top: 330px; }
+	section.process .pro_top li:nth-child(5) { right: 10px; bottom: 240px; }
+	section.process .pro_top li:nth-child(6) { left: 0; bottom: 150px; }
+	section.process .pro_top li:nth-child(7) { right: -35px; bottom: 60px; }
+
+	/* ====================================== */
+	
+	section.process .pro_bottom { position: relative; padding: 150px 0; font-size: 1em; }
+
+	section.process .pro_bottom > .bg_wrap { position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 100%; height: 100%; text-align: center; }
+	section.process .pro_bottom > .bg_wrap > img { display: inline-block; height: 100%; object-fit: cover; opacity: 0.2; filter: blur(6px); -webkit-filter: blur(6px); }
+
+
+	section.process .pro_bottom ul { display: flex; flex-direction: column; gap: 40px; margin-bottom: 100px; }
+	
+	section.process .pro_bottom ul > li { display: flex; gap: 20px; }
+
+	section.process .pro_bottom ul > li > .img_wrap { flex: 1 1 50%; }
+	section.process .pro_bottom ul > li > .img_wrap img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+	section.process .pro_bottom ul > li:nth-child(even) > .img_wrap { order: 1; }
+
+
+	section.process .pro_bottom ul > li > .info_wrap { flex: 1 1 50%; display: inline-flex; flex-direction: column; gap: 20px; word-break: keep-all; }
+
+	section.process .pro_bottom ul > li:nth-child(even) > .info_wrap { text-align: right; }
+	
+
+	section.process .pro_bottom > .rel > p { text-align: center; }
+	
+	
+}
+
+
+/* ==================== Tablet(end) ==================== */
+
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* ==================== Desktop(start) ==================== */
+
+
+@media screen and (min-width: 1025px){
+
+
+	h2 { font-size: 3.75em; }
+	h3 > span.num { font-size: 1.5em; }
+	h3 > span.title { font-size: 1.25em; }
+
+	/*br { display:none !important; }*/
+
+	
+	section.visual { width: 100%; height: 100vh; }
+	
+	section.visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
+	
+	section.visual .desc_wrap { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 100%; font-size: 1.5em; text-align: center; word-break: keep-all; }
+
+	section.visual .desc_wrap > p.top { margin-bottom: 50px; }
+
+	/* ====================================== */
+
+	section.process { padding: 120px 0 240px; }
+
+	section.process .inner_wrap { padding: 0 1.14583vw; }
+	
+	section.process h2 { margin-bottom: 30px; }
+	section.process p.desc { margin-bottom: 40px; font-size: 1.5em; text-align: center; }
+
+
+	section.process .pro_top { position: relative; width: 800px; margin: 0 auto 250px; text-align: center; }
+
+	section.process .pro_top > img { display: inline-block; width: 200px; object-fit: cover; }
+
+	section.process .pro_top li { position: absolute; font-size: 1.5em; }
+	section.process .pro_top li:nth-child(odd)::before { content: ""; position: absolute; top: 50%; right: 110%; transform: translateY(-50%); display: inline-block; width: 80px; height: 2px; background: #333; }
+	section.process .pro_top li:nth-child(even)::after { content: ""; position: absolute; top: 50%; left: 110%; transform: translateY(-50%); display: inline-block; width: 80px; height: 2px; background: #333; }
+
+
+	section.process .pro_top li:nth-child(1) { right: 120px; top: 60px; }
+	section.process .pro_top li:nth-child(2) { left: 130px; top: 150px; }
+	section.process .pro_top li:nth-child(3) { right: 0; top: 240px; }
+	section.process .pro_top li:nth-child(4) { left: 60px; top: 330px; }
+	section.process .pro_top li:nth-child(5) { right: 70px; bottom: 240px; }
+	section.process .pro_top li:nth-child(6) { left: 70px; bottom: 150px; }
+	section.process .pro_top li:nth-child(7) { right: 30px; bottom: 60px; }
+
+	/* ====================================== */
+	
+	section.process .pro_bottom { position: relative; padding: 200px 0 300px; font-size: 1.5em; }
+
+	section.process .pro_bottom > .bg_wrap { position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 100%; height: 100%; text-align: center; }
+	section.process .pro_bottom > .bg_wrap > img { display: inline-block; height: 100%; object-fit: cover; opacity: 0.2; filter: blur(6px); -webkit-filter: blur(6px); }
+
+
+	section.process .pro_bottom ul { display: flex; flex-direction: column; gap: 50px; margin-bottom: 150px; }
+	
+	section.process .pro_bottom ul > li { display: flex; gap: 24px; }
+
+	section.process .pro_bottom ul > li > .img_wrap { flex: 1 1 50%; }
+	section.process .pro_bottom ul > li > .img_wrap img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+	section.process .pro_bottom ul > li:nth-child(even) > .img_wrap { order: 1; }
+
+
+	section.process .pro_bottom ul > li > .info_wrap { flex: 1 1 50%; display: inline-flex; flex-direction: column; gap: 30px; word-break: keep-all; }
+
+	section.process .pro_bottom ul > li:nth-child(even) > .info_wrap { text-align: right; }
+	
+	section.process .pro_bottom > .rel > p { text-align: center; }
+	
+
+}
+
+
+/* ==================== Desktop(end) ==================== */

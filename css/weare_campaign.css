@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/*	====================================================================================	*/
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!					   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  weare_campaign.css   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!					   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/*	====================================================================================	*/
+
+section.visual { width: 100%; height: 100vh; }
+section.visual h2::before { content: ""; position: absolute; transform: translate(-40%, -15%); z-index: -1; display: inline-block; background: url("../images/img_index_nav_hover@2x.png") no-repeat; background-size: 100%; }
+
+/* ============================= Mobile (start) ============================= */
+@media screen and (max-width: 767px) {
+
+
+	h2 { font-size: 2em; }
+	br.D, br.T { display: none; }
+	
+	section.visual h2 { margin-top: 19.7183vh; }
+	section.visual h2::before { width: 1.571428em; height: 1.571428em; }
+	section.visual .img_wrap { width: 100%; height: 25.3521vh; margin: 26px 0 40px; }
+	section.visual .img_wrap img { width: 100%; height: 100%; object-fit: cover; }
+	section.visual p.desc { padding: 0 15px; font-family: "NotoSansKR-Medium"; font-size: 0.9375em; text-align: center; }
+
+	section.campaign_content { margin-bottom: 100px; }
+	section.campaign_content ul.content_wrap { width: 100%; padding: 0 3.64583vw; }
+	section.campaign_content li { position: relative; margin-top: 80px; }
+	section.campaign_content div.img_wrap { width: 100%; height: 100%; }
+	section.campaign_content div.img_wrap img { display: block; width: 100%; height: 100%; }
+	section.campaign_content div.info_wrap { padding: 28px 0; text-align: center; }
+	section.campaign_content div.info_wrap dt { font-family: 'NotoSansKR-Bold'; font-size: 1em; word-break: keep-all; }
+	section.campaign_content div.info_wrap dt::after { content: ""; display: block; width: 100%; height: 1px; margin: 10px 0 16px; background: #bbb; }
+	section.campaign_content div.info_wrap dd { font-size: 0.875em; word-break: keep-all; }
+	section.campaign_content li button.btn_pop { position: absolute; display: block; right: 0; bottom: -10px; font-size: 0.875em; }
+	section.campaign_content li button.btn_pop::after { content: ""; display: inline-block; width: 12px; height: 12px; margin-left: 6px; background: url("../images/weare_campaign/img_campaign_contents_btn@2x.png") no-repeat; background-size: 100%; }
+
+	div.popup_wrap { position: fixed; display: none; left: 0; top: 0; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.3); z-index: 120; }
+	.popup_wrap.active { display: block; }
+	div.popup_wrap div.content_wrap { position: absolute; display: block; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 50px 8px 8px; border-radius: 10px; background: #fff;  z-index: 2; }
+	div.popup_wrap div.content_wrap div.img_wrap { overflow-y: scroll; width: 90vw; height: 50vh; }
+	div.img_wrap img { display: block; width: 100%; }
+
+	div.popup_wrap button.btn_close { position: absolute; top: 16px; right: 14px; z-index: 121}
+	div.popup_wrap button.btn_close::after { content: ""; display: block; width: 20px; height: 20px; background: url("../images/weare_campaign/img_campaign_contents_btn_pop@2x.png") no-repeat; background-size: 100%; }
+
+}
+/* ============================== Mobile (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Tablet (start) ============================= */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+	h2 { font-size: 3.75em; }
+	br.D, br.M { display: none; }
+	
+	section.visual h2 { margin-top: 21.484375vh; }
+	section.visual h2::before { width: 1.516em; height: 1.516em; }
+	section.visual .img_wrap { width: 100%; height: 24.4140625vh; margin: 40px 0 50px; }
+	section.visual .img_wrap img { width: 100%; height: 100%; object-fit: cover; }
+	section.visual p.desc { font-family: "NotoSansKR-Medium"; font-size: 1.25em; text-align: center; }
+
+	section.campaign_content { margin-bottom: 100px; }
+	section.campaign_content ul.content_wrap { width: 100%; padding: 0 3.64583vw; }
+	section.campaign_content li { position: relative; display: flex; flex-wrap: nowrap; gap: 20px; margin-top: 80px; }
+	section.campaign_content li:nth-child(even) { flex-direction: row-reverse; }
+	section.campaign_content div.img_wrap { flex: 1 1 45%; width: 100%; height: 100%; }
+	section.campaign_content div.img_wrap img { display: block; width: 100%; height: 100%; }
+	section.campaign_content div.info_wrap { flex: 1 1 55%; padding: 40px 0; }
+	section.campaign_content li:nth-child(even) dl.info_wrap { text-align: right; }
+	section.campaign_content div.info_wrap dt { font-family: 'NotoSansKR-Bold'; font-size: 1.125em; }
+	section.campaign_content div.info_wrap dt::after { content: ""; display: block; width: 100%; height: 1px; margin: 10px 0 16px; background: #bbb; }
+	section.campaign_content div.info_wrap dd { font-size: 1em; word-break: keep-all; }
+	section.campaign_content li button.btn_pop { position: absolute; display: block; right: 0; bottom: 0; margin-top: 10px; }
+	section.campaign_content li button.btn_pop::after { content: ""; display: inline-block; width: 14px; height: 14px; margin-left: 6px; background: url("../images/weare_campaign/img_campaign_contents_btn@2x.png") no-repeat; background-size: 100%; }
+	section.campaign_content li button.btn_pop:hover { font-family: "NotoSansKR-Medium"; }
+	section.campaign_content li button.btn_pop:hover::after { background: url("../images/weare_campaign/img_campaign_contents_btn_hover@2x.png") no-repeat; background-size: 100%; }
+
+	div.popup_wrap { position: fixed; display: none; left: 0; top: 0; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.3); z-index: 120; }
+	.popup_wrap.active { display: block; }
+	div.popup_wrap div.content_wrap { position: absolute; display: block; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 60px 20px 20px; border-radius: 10px; background: #fff;  z-index: 2; }
+	div.popup_wrap div.content_wrap div.img_wrap { overflow-y: scroll; height: 66vh; }
+
+	div.popup_wrap button.btn_close { position: absolute; top: 20px; right: 20px; z-index: 121}
+	div.popup_wrap button.btn_close::after { content: ""; display: block; width: 20px; height: 20px; background: url("../images/weare_campaign/img_campaign_contents_btn_pop@2x.png") no-repeat; background-size: 100%; }
+
+
+}
+/* ============================== Tablet (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Desktop (start) ============================= */
+@media screen and (min-width: 1025px){
+
+
+	h2 { font-size: 3.75em; }
+	br.T, br.M { display: none; }
+
+	section.visual h2 { margin-top: 21.0416vh; }
+	section.visual h2::before { width: 1.3333em; height: 1.30555em; }
+	section.visual .img_wrap { width: 100%; height: 31.25vh; margin: 40px 0 50px; }
+	section.visual .img_wrap img { width: 100%; height: 100%; object-fit: cover; }
+	section.visual p.desc { font-family: "NotoSansKR-Medium"; font-size: 1.5em; text-align: center; }
+
+	section.campaign_content { margin-bottom: 210px; }
+	section.campaign_content ul.content_wrap { width: 100%; padding-right: 192px; }
+	section.campaign_content li { display: flex; flex-wrap: nowrap; gap: 70px; margin-top: 100px; }
+	section.campaign_content li:nth-child(even) { flex-direction: row-reverse; }
+	section.campaign_content div.img_wrap { flex: 0 0 auto; width: 960px; height: 380px; }
+	section.campaign_content li:nth-child(even) div.img_wrap { width: 626px; height: 380px; }
+	section.campaign_content div.img_wrap img { display: block; width: 100%; height: 100%; }
+	section.campaign_content div.info_wrap { position: relative; flex: 0 1 auto; min-width: 380px; padding: 70px 0; }
+	section.campaign_content li:nth-child(even) dl.info_wrap { text-align: right; }
+	section.campaign_content div.info_wrap dt { font-family: 'NotoSansKR-Bold'; font-size: 1.625em; }
+	section.campaign_content div.info_wrap dt::after { content: ""; display: block; width: 100%; height: 1px; margin: 10px 0 16px; background: #bbb; }
+	section.campaign_content div.info_wrap dd { font-size: 1.375em; word-break: keep-all; }
+	section.campaign_content li button.btn_pop { position: absolute; display: block; right: 0; bottom: 0; }
+	section.campaign_content li button.btn_pop::after { content: ""; display: inline-block; width: 14px; height: 14px; margin-left: 6px; background: url("../images/weare_campaign/img_campaign_contents_btn@2x.png") no-repeat; background-size: 100%; }
+	section.campaign_content li button.btn_pop:hover { font-family: "NotoSansKR-Medium"; }
+	section.campaign_content li button.btn_pop:hover::after { background: url("../images/weare_campaign/img_campaign_contents_btn_hover@2x.png") no-repeat; background-size: 100%; }
+
+	div.popup_wrap { position: fixed; display: none; left: 0; top: 0; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.3); z-index: 120; }
+	.popup_wrap.active { display: block; }
+	div.popup_wrap div.content_wrap { position: absolute; display: block; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 60px 20px 20px; border-radius: 10px; background: #fff;  z-index: 2; }
+	div.popup_wrap div.content_wrap div.img_wrap { overflow-y: scroll; height: 66vh; }
+
+	div.content_wrap button.btn_close { position: absolute; top: 20px; right: 20px; z-index: 121}
+	div.content_wrap button.btn_close::after { content: ""; display: block; width: 20px; height: 20px; background: url("../images/weare_campaign/img_campaign_contents_btn_pop@2x.png") no-repeat; background-size: 100%; }
+
+}
+/* ============================== Desktop (end) ============================== */

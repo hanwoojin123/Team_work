@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/*	====================================================================================	*/
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!				   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  weare_news.css   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!				   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/*	====================================================================================	*/
+
+section.visual { width: 100%; height: 100vh; }
+section.visual h2::before { content: ""; position: absolute; transform: translate(-40%, -15%); z-index: -1; display: inline-block; background: url("../images/img_index_nav_hover@2x.png") no-repeat; background-size: 100%; }
+/* ============================= Mobile (start) ============================= */
+@media screen and (max-width: 767px) {
+
+
+	h2 { font-size: 2em; }
+	
+	section.visual h2 { margin-top: 19.7183vh; font-size: 3em; }
+	section.visual h2::before { width: 1.571428em; height: 1.571428em; }
+	section.visual .img_wrap { width: 100%; height: 25.3521vh; margin: 26px 0 40px; }
+	section.visual .img_wrap img { width: 100%; height: 100%; object-fit: cover; }
+	section.visual p.desc { padding: 0 30px; font-family: "NotoSansKR-Medium"; font-size: 0.9375em; text-align: center; }
+
+	/* section.content */
+	section.content { margin-top:80px; padding-bottom:100px; text-align:center; }
+	section.content h2 { font-family: "NotoSansKR-Regular"; font-size: 1.25em; border-bottom:1px solid #ccc; width:100%; padding-bottom:25px;}
+	section.content p.date { text-align:right; font-size:0.875em; }
+	section.content .cont_wrap > h3 { font-family: "NotoSansKR-Regular"; margin-top:50px; font-size: 1.0625em; line-height: 1.3; }
+	section.content .cont_wrap img { margin:50px 0 20px 0; }
+	section.content .cont_wrap p.info {font-size:0.8125em; color: #999; }
+	section.content .cont_wrap p.desc { margin-top:40px; font-size: 0.9375em; line-height: 1.5; }
+
+	section.content .long_hr {border-top: 1px solid #ccc; width:100%; margin:50px auto; }
+
+	/* more_button 만들기*/
+	.btn_more { display: block; margin: 0 auto; font-size: 0.875em; }
+	.btn_more[class~="_L"] { float:right; padding: 0.67857142em 1.5em 0.8214em; margin:40px auto; }
+
+}
+/* ============================== Mobile (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Tablet (start) ============================= */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+	h2 { font-size: 3.75em; }
+	
+	section.visual h2 { margin-top: 21.484375vh; }
+	section.visual h2::before { width: 1.516em; height: 1.516em; }
+	section.visual .img_wrap { width: 100%; height: 24.4140625vh; margin: 40px 0 50px; }
+	section.visual .img_wrap img { width: 100%; height: 100%; object-fit: cover; }
+	section.visual p.desc { font-family: "NotoSansKR-Medium"; font-size: 1.25em; text-align: center; }
+
+	/* section.content */
+	section.content { margin-top:80px; padding-bottom:100px; text-align:center;}
+	section.content h2 { width:100%; padding-bottom:50px; border-bottom:1px solid #ccc; line-height: 1.3; font-family: "NotoSansKR-Regular";  font-size: 3em;  }
+	section.content p.date { text-align:right; }
+	section.content .cont_wrap > h3 { margin-top:100px; line-height: 1.3; font-size: 1.875em; }
+	section.content .cont_wrap img { margin:100px 0 30px 0; }
+	section.content .cont_wrap p.info {font-size:1em; color: #999; }
+	section.content .cont_wrap p.desc { margin-top:100px; padding-bottom:30px; font-size:1.5em; line-height: 1.5; }
+
+	section.content .long_hr {border-top: 1px solid #ccc; width:100%; margin:50px auto; }
+
+	/* more_button 만들기*/
+	.btn_more { display: block; margin: 0 auto; font-size: 1.25em; }
+	.btn_more[class~="_L"] { float:right; padding: 0.8125em 2.5em 1.0625em; margin:70px auto; }
+
+}
+/* ============================== Tablet (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Desktop (start) ============================= */
+@media screen and (min-width: 1025px){
+
+
+	/* more_button 만들기*/
+	.btn_more { display: block; margin: 0 auto; font-size: 1.25em; }
+	.btn_more[class~="_L"] { float:right; padding: 0.8125em 2.5em 1.0625em; margin:70px auto; }
+	
+
+	/* section.visual */
+	h2 { font-size: 3.75em; }
+
+	section.visual h2 { margin-top: 21.0416vh; font-size: 4.5em }
+	section.visual h2::before { width: 1.3333em; height: 1.30555em; }
+	section.visual .img_wrap { width: 100%; height: 31.25vh; margin: 40px 0 50px; }
+	section.visual .img_wrap img { width: 100%; height: 100%; object-fit: cover; }
+	section.visual p.desc { font-family: "NotoSansKR-Medium"; font-size: 1.5em; text-align: center; }
+
+	/* section.content */
+	section.content { margin-top:80px; padding-bottom: 150px; text-align:center;}
+	section.content h2 { font-family: "NotoSansKR-Regular"; font-size: 3em; border-bottom:1px solid #ccc; width:100%; padding-bottom:50px;}
+	section.content p.date { padding-top:10px; text-align:right; }
+	section.content .cont_wrap > h3 { margin-top:100px; line-height: 1.3; font-size: 2em; }
+	section.content .cont_wrap img { margin:80px 0 50px; }
+	section.content .cont_wrap p.info {font-size:1.125em; color: #999; }
+	section.content .cont_wrap p.desc { margin-top:100px; padding-bottom:40px; font-size:1.5em; line-height: 1.5; }
+
+	section.content .long_hr {border-top: 1px solid #ccc; width:100%; margin:50px auto; }
+
+
+
+}
+/* ============================== Desktop (end) ============================== */

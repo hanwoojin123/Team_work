@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+/*	================================================================================	*/
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  global.css   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/*	================================================================================	*/
+
+section.visual { width: 100%; height: 100vh; }
+section.visual h2::before { content: ""; position: absolute; transform: translate(-40%, -15%); z-index: -1; display: inline-block; background: url("../images/img_index_nav_hover@2x.png") no-repeat; background-size: 100%; }
+
+/* ============================= Mobile (start) ============================= */
+@media screen and (max-width: 767px) {
+
+	h2 { font-size: 2em; }
+	br.D, br.T { display: none; }
+	
+	section.visual h2 { margin-top: 19.7183vh; }
+	section.visual h2::before { width: 1.571428em; height: 1.571428em; }
+	section.visual .img_wrap { width: 100%; height: 25.3521vh; margin: 26px 0 40px; }
+	section.visual .img_wrap img { width: 100%; height: 100%; object-fit: cover; }
+	section.visual p.desc { padding: 0 15px; font-family: "NotoSansKR-Medium"; font-size: 0.9375em; line-height: 21px; text-align: center; }
+
+	section.global_content { margin-bottom: 100px; }
+	section.global_content .img_map_wrap { width: 290px; height: 158px; margin: 0 auto 44px; }
+	section.global_content .img_map_wrap img { display: block; width: 100%; height: 100%; }
+	section.global_content .glb_cont_01 { margin: 50px 0; }
+	section.global_content dt { font-family: 'NotoSansKR-Bold'; font-size: 1em; }
+	section.global_content dt::after { content: ""; display: block; width: 100%; height: 1px; margin: 10px 0 16px; background: #bbb; }
+	section.global_content dd { word-break: keep-all; font-size: 0.875em; line-height: 21px; }
+
+
+}
+/* ============================== Mobile (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Tablet (start) ============================= */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	
+	h2 { font-size: 3.75em; }
+	br.D, br.M { display: none; }
+	
+	section.visual h2 { margin-top: 21.484375vh; }
+	section.visual h2::before { width: 1.516em; height: 1.516em; }
+	section.visual .img_wrap { width: 100%; height: 24.4140625vh; margin: 40px 0 50px; }
+	section.visual .img_wrap img { width: 100%; height: 100%; object-fit: cover; }
+	section.visual p.desc { font-family: "NotoSansKR-Medium"; font-size: 1.25em; line-height: 30px; text-align: center; }
+
+	section.global_content { margin-bottom: 160px; }
+	section.global_content .img_map_wrap { width: 712px; height: 388px; margin: 0 auto; }
+	section.global_content .img_map_wrap img { display: block; width: 100%; height: 100%; }
+	section.global_content .glb_cont_01 { margin: 80px 0; }
+	section.global_content dt { font-family: 'NotoSansKR-Bold'; font-size: 1.125em; }
+	section.global_content dt::after { content: ""; display: block; width: 300px; height: 1px; margin: 10px 0 16px; background: #bbb; }
+	section.global_content dd { word-break: keep-all; font-size: 1em; line-height: 30px; }
+
+}
+/* ============================== Tablet (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Desktop (start) ============================= */
+@media screen and (min-width: 1025px){
+
+
+	h2 { font-size: 3.75em; }
+	br.T, br.M { display: none; }
+
+	section.visual h2 { margin-top: 21.0416vh; }
+	section.visual h2::before { width: 1.3333em; height: 1.30555em; }
+	section.visual .img_wrap { width: 100%; height: 31.25vh; margin: 40px 0 50px; }
+	section.visual .img_wrap img { width: 100%; height: 100%; object-fit: cover; }
+	section.visual p.desc { font-family: "NotoSansKR-Medium"; font-size: 1.5em; line-height: 35px; text-align: center; }
+
+	section.global_content { margin-bottom: 190px; }
+	section.global_content .img_map_wrap { width: 1016px; height: 555px; margin: 0 auto; }
+	section.global_content .img_map_wrap img { display: block; width: 100%; height: 100%; }
+	section.global_content .glb_cont_wrap { display: flex; flex-wrap: nowrap; justify-content: space-between; }
+	section.global_content .glb_cont_01 { flex: 0 0 auto; }
+	section.global_content dt { font-family: 'NotoSansKR-Bold'; font-size: 1.375em; }
+	section.global_content dt::after { content: ""; display: block; width: 400px; height: 1px; margin: 10px 0 16px; background: #bbb; }
+	section.global_content .glb_cont_02 dt::after { margin-left: auto; }
+	section.global_content dd { font-size: 1.125em; line-height: 35px; }
+	section.global_content .glb_cont_02 { flex: 0 0 auto; text-align: right; }
+
+
+}
+/* ============================== Desktop (end) ============================== */

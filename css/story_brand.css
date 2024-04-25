@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+/*	=======================================================================================	*/
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!						 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  story_brand.css   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!						 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/*	=======================================================================================	*/
+
+	section.visual { width: 100%; height: 100vh; }
+	section.visual h2::before { content: ""; position: absolute; transform: translate(-40%, -15%); z-index: -1; display: inline-block; background: url("../images/story_brand/img_index_nav_hover@2x.png") no-repeat; background-size: 100%; }
+
+	section.brand picture { display: block; }
+	/*section.brand picture { display: none; }*/
+	section.brand div[class*="keyword_"] .info_wrap > p.title { font-family: "CormorantGaramond-Medium"; }
+	section.brand div[class*="keyword_"] .info_wrap > p.desc { font-family: "NotoSansKR-Light"; line-height: 1.2; }
+
+/* ============================= Mobile (start) ============================= */
+@media screen and (max-width: 767px) {
+
+	section.visual { overflow-x: clip; overflow-y:visible; }
+	section.visual div.visual_bg { position:absolute; left:0; top:0%; display:block; width:100%; /*height:600px;*/ }
+	section.visual div.visual_bg img{ width:100%; height:100%; object-fit:cover; }
+	/*section.visual div.brandTitle { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); margin:120px 0; text-align:center; }
+	*/section.visual div.brandTitle br.T { display:none; }
+	section.visual div.brandTitle br.M { display:block; }/*
+	section.visual div.brandTitle > h2{ width:114px; height:100px; margin:0 auto 10.4166vw;  background:url("../images/story_brand/img_visual_logo.png")no-repeat; background-size:100%; }
+	section.visual div.brandTitle > p { font-family:"NotoSansKR-Medium"; width:92.7083vw; font-size:0.9375em; line-height:1.8; }
+	section.visual div.brandTitle > p:nth-child(3) { margin-bottom:12.5vw; }
+	section.visual div.brandTitle > p:nth-child(4) { margin-bottom:25vw; }*/
+
+	section.visual div.brandTitle { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:90.625vw; text-align:center; font-family:"NotoSansKR-Medium"; font-size:0.9375em; line-height:1.8; }
+	section.visual div.brandTitle > h2{ width:114px; height:100px; margin:0 auto 10.4166vw;  background:url("../images/story_brand/img_visual_logo.png")no-repeat; background-size:100%; }
+	section.visual div.brandTitle > p:first-child { margin-top:120px; }
+	section.visual div.brandTitle > p:nth-of-type(2) { margin-bottom:40px; }
+	section.visual div.brandTitle > p.Mobile_none { display:none; }
+	section.visual div.brandTitle > p.Mobile_none { display:none; }
+
+	
+	section.brand { width: 100%; /*padding-top: 5.28169vh;*/ padding:50px 0 100px; }
+	section.brand div[class*="keyword_"] { display: flex; width: 100%; flex-direction: column; gap: 1.76056vh; }
+	section.brand div[class*="keyword_"] + div { margin-top:84px; }
+	section.brand div[class*="keyword_"] > .imgs_wrap { overflow: hidden; position: relative; width: 90.625vw; height: 80vw; order:2; }
+	section.brand div[class*="keyword_"] > .imgs_wrap img{ width:100%; height:100%; object-fit:cover; }
+	/*section.brand .keyword_01{ margin-top:62.5vw; }*/
+	section.brand div.keyword_02 > .imgs_wrap { width: 90.625vw; height: 68.75vw; }
+	section.brand div[class*="keyword_"] > .info_T { order:1; }
+	section.brand div[class*="keyword_"] > .info_D { order:3; text-align:center; }
+	section.brand div[class*="keyword_"] .info_wrap > h3.title { font-family:"CormorantGaramond-Bold"; font-size: 2em; text-align:center; }
+	section.brand div[class*="keyword_"] .info_wrap > p { font-size:0.9375em; line-height:1.8; }
+	section.brand div[class*="keyword_"] .info_wrap > p > br.D { display:none; }
+	section.brand div[class*="keyword_"] .info_wrap > p > br.T { display:none; }
+	section.brand div[class*="keyword_"] .info_wrap > p > br.M { display:block; }
+	
+	section.brand .en_typo { margin-top:-7.291vw; }
+	section.brand .en_typo > img { width:106.25vw; margin-left:-14.20833vw; opacity:0.6; }
+	section.brand .en_typo > p { font-family:"CormorantGaramond-Bold"; margin:7.5vw 4.6875vw 31.25vw; font-size:0.875em; text-align:center; line-height:1.5; }
+	section.brand div.en_typo > p > br.D{ display:none; }
+	section.brand div.en_typo > p > br.T{ display:none; }
+	section.brand div.en_typo > p > br.M{ display:block; }
+	
+	section.promise .inner_wrap { margin-bottom: 67.5vw; }
+	section.promise h2 { position:relative; font-family:"CormorantGaramond-Bold"; font-size:10vw; margin-bottom:17.718vw; text-align:center; }
+	section.promise h2::before{ position:absolute; left:50%; top:50%; transform:translate(-50%, -50%) rotate(-8deg); content:""; display:inline-block; width:51.25vw; height:37.5vw; background:url("../images/story_brand/img_brand_proms_h2.png")no-repeat; background-size:100%; opacity:0.2; }
+	section.promise div + div { margin-top:12.5vw; }
+	section.promise h3{ position:relative; padding-bottom:3.125vw; font-family:"NotoSerifKR-Light","NotoSerifSC-Regular"; font-size:6.25vw; text-align:center; }
+	section.promise h3::before{ position:absolute; left:26%; bottom:0; content:""; display:inline-block; width:43.75vw; height:1px; background:#333; }
+	section.promise p:nth-of-type(2) { padding-top:3.125vw; font-size:4.6875vw; text-align:center; line-height:1.5; }
+	section.promise .promise_03 { position:relative; }
+	section.promise .promise_03::after {position:absolute; right:-50%; bottom:-120%; content:""; display:inline-block; width:534px; height:340px; background:url("../images/story_brand/img_brand_proms_bg.png")no-repeat; background-size:100%; transform:rotate(156deg); opacity:0.2; }
+	section.promise p.title_en { display:none; }
+	section.promise p > br.T { display:none; }
+	section.promise p > br.M { display:block; }
+
+	section.desc_hr img{ display:block; width:100%; height:100%; object-fit:cover; filter:brightness(0.7); }
+	section.desc_hr .desc_wrap { position:absolute; top:50%; left:0; transform:translateY(-50%); margin-left:3.64583vw; }
+	section.desc_hr p { font-size:4.6875vw; color:#fff; line-height:1.8; }
+
+	section.slogan { padding:150px 3.64583vw 200px; text-align:center; }
+	section.slogan h2 { position:relative; font-family:"NotoSerifKR-Light","NotoSerifSC-Regular"; font-size:7.5vw; margin-bottom:1.5625em; }
+	section.slogan h2::before{ position:absolute; left:0.458vw; top:-2.78125vw; content:""; display:inline-block; width:7.5vw; height:5vw; background:url("../images/story_brand/img_brand_style_04_D.png")no-repeat; background-size:100%; }
+	section.slogan h2::after{ position:absolute; right:0.458vw; top:-2.78125vw; content:""; display:inline-block; width:8.3333vw; height:5.46875vw; background:url("../images/story_brand/img_brand_style_04_D.png")no-repeat; background-size:100%; transform:rotate(180deg); }
+	section.slogan p:nth-child(3){ margin:6.25vw 0 12.5vw; }
+	section.slogan p { font-size:4.6875vw; line-height:1.8; }
+	section.slogan p > br.D { display:none; }
+	section.slogan p > br.T { display:none; }
+	section.slogan p.en_slogan { font-family:"CormorantGaramond-Bold"; text-transform:uppercase; line-height:1.5; }
+
+
+
+
+}
+/* ============================== Mobile (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Tablet (start) ============================= */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+	section.visual { overflow-x: clip; overflow-y:visible; }
+	section.visual div.visual_bg { display:block; width:100%; height:1020px; }
+	section.visual div.visual_bg img{ width:100%; height:100%; object-fit:cover; }
+	section.visual div.brandTitle { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; }
+	section.visual div.brandTitle br.M { display:none; }
+	section.visual div.brandTitle br.T { display:block; }
+	section.visual div.brandTitle > h2{ width:29.166vw; height:25.520vw; margin:0 auto 10.4166vw;  background:url("../images/story_brand/img_visual_logo.png")no-repeat; background-size:100%; }
+	section.visual div.brandTitle > p { font-family:"NotoSansKR-Medium"; width:92.7083vw; font-size:1.25em; line-height:1.8; }
+	section.visual div.brandTitle > p:nth-child(4) { margin-bottom:60px; }
+
+	section.brand { width: 100%; padding-top: 8.3333vw; }
+	section.brand div[class*="keyword_"] { display: flex; flex-wrap:wrap; flex-direction:column; justify-content:flex-start; width: 100%;}
+	section.brand div[class*="keyword_"] .info_wrap > h3.title { font-family:"CormorantGaramond-Bold"; font-size: 2em; }
+	section.brand div[class*="keyword_"] > .imgs_wrap { overflow: hidden; position: relative; }
+	section.brand div[class*="keyword_"] > .imgs_wrap img { width: 100%; height: 100%; object-fit: cover; }
+	section.brand div[class*="keyword_"] .info_wrap > p { font-size:1.125em; line-height:1.5; }
+	section.brand div[class*="keyword_"] .info_wrap > p > br.M{ display:none; }
+	section.brand div[class*="keyword_"] .info_wrap > p > br.D{ display:none; }
+	section.brand .keyword_01 > .imgs_wrap { width: 60.9375vw; height: 33.333vw; }
+	section.brand .keyword_01 > div.info_wrap > h3.title { margin:2.6041vw 0 1.30208vw; }
+	section.brand .keyword_02 { padding:24.21875vw 0; }
+	section.brand .keyword_02 > .imgs_wrap { width: 100%; height: 28.645vw; order:2; }
+	section.brand .keyword_02 > .info_T{ width:100%; margin-bottom:0.625em; order:1; }
+	section.brand .keyword_02 > .info_T > h3 { text-align:center; }
+	section.brand .keyword_02 > .info_D{ width:100%; order:3; margin-top:0.625em; text-align:center; line-height:1.5; }
+	section.brand div.keyword_03 { display: flex; flex-direction:column; justify-content:flex-end; width: 100%; }
+	section.brand .keyword_03 > .imgs_wrap { width: 60.9375vw; height: 33.333vw; margin-left:auto; }
+	section.brand div.keyword_03 > .info_wrap { text-align:right; }
+	section.brand .keyword_03 > div.info_wrap > h3.title { margin:2.6041vw 0 1.30208vw; }
+	section.brand div.keyword_03 > .info_wrap > p > br.T { display:block; }
+
+	section.brand .en_typo { margin-top:-7.291vw; }
+	section.brand .en_typo > img { width:72.9166vw; margin-left:-5.20833vw; opacity:0.9; }
+	section.brand .en_typo > p { font-family:"CormorantGaramond-Bold"; margin:7.161458vw 3.64583vw 31.25vw; font-size:1.25em; text-align:center; line-height:1.5; }
+	section.brand .en_typo > p > br.D{ display:none; }
+	section.brand .en_typo > p > br.M{ display:none; }
+
+	section.promise .inner_wrap { padding:0 3.64583vw 26.04166vw; }
+	section.promise h2 { position:relative; font-family:"CormorantGaramond-Bold"; font-size:4.9479vw; margin-bottom:11.718vw; }
+	section.promise h2::before{ position:absolute; left:50%; top:50%; transform:translate(-50%, -50%) rotate(-8deg); content:""; display:inline-block; width:34.114583vw; height:24.7395vw; background:url("../images/story_brand/img_brand_proms_h2.png")no-repeat; background-size:100%; opacity:0.2; }
+	section.promise div + div { margin-top:7.5520vw; }
+	section.promise div{ position:relative; }
+	section.promise div > p > br.M{ display:none; }
+	section.promise div::before { position:absolute; left:0; bottom:-2.34375vw; content:""; display:inline-block; width:100%; height:1px; background:#333; }
+	section.promise h3{ font-family:"NotoSerifKR-Light","NotoSerifSC-Regular"; width:100%; margin-bottom:1.30208vw; font-size:4.1666vw; text-align:right; }
+	section.promise p.title_en { position:absolute; left:0; bottom:-40%; font-family:"CormorantGaramond-Bold"; font-size:22px; }
+	section.promise p { display:inline-block; }
+	section.promise p:nth-of-type(2) { width:100%; font-size:20px; text-align:right; }
+	
+	section.desc_hr img{ display:block; width:100%; height:100%; object-fit:cover; filter:brightness(0.7); }
+	section.desc_hr .desc_wrap { position:absolute; top:50%; left:0; transform:translateY(-50%); margin-left:3.64583vw; }
+	section.desc_hr p { font-size:1.375em; color:#fff; line-height:1.8; }
+	section.desc_hr p > br.M{ display:none; }
+
+	section.slogan { padding:32.552vw 3.64583vw; text-align:center; }
+	section.slogan h2 { position:relative; font-family:"NotoSerifKR-Light","NotoSerifSC-Regular"; font-size:3.64583vw; margin-bottom:1.5625em; }
+	section.slogan h2::before{ position:absolute; left:17.458vw; top:0.21875vw; content:""; display:inline-block; width:8.3333vw; height:5.46875vw; background:url("../images/story_brand/img_brand_style_04_D.png")no-repeat; background-size:100%; }
+	section.slogan h2::after{ position:absolute; right:17.458vw; top:0.21875vw; content:""; display:inline-block; width:8.3333vw; height:5.46875vw; background:url("../images/story_brand/img_brand_style_04_D.png")no-repeat; background-size:100%; transform:rotate(180deg); }
+	section.slogan p { font-size:2.6041vw; line-height:1.8; }
+	section.slogan p > br.D { display:none; }
+	section.slogan p > br.M { display:none; }
+	section.slogan p.en_slogan { font-family:"CormorantGaramond-Bold"; margin-top:1.5625vw; text-transform:uppercase; }
+
+
+
+
+}
+/* ============================== Tablet (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Desktop (start) ============================= */
+@media screen and (min-width: 1025px){
+
+
+	section.visual { overflow-x: clip; overflow-y:visible; }
+	section.visual div.visual_bg { display:block; width:100%; height:1278px; }
+	section.visual div.visual_bg img{ width:100%; height:100%; object-fit:cover; }
+	section.visual div.brandTitle { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; }
+	section.visual div.brandTitle br { display:none; }
+	section.visual div.brandTitle > h2{ width:13.6458vw; height:15.625vw; margin:0 auto; background:url("../images/story_brand/img_visual_logo.png")no-repeat; background-size:100%; }
+	section.visual div.brandTitle > p { font-family:"NotoSansKR-Medium"; width:80vw; font-size:1.25vw; line-height:1.8; }
+	section.visual div.brandTitle > p:nth-child(4) { margin-bottom:60px; }
+
+	section.brand { width: 100%; padding-top: 8.3333vw; }
+	section.brand div[class*="keyword_"] { display: flex; flex-wrap:wrap; flex-direction:column; }
+	section.brand div[class*="keyword_"] .info_wrap > h3.title { font-family:"CormorantGaramond-Bold"; font-size: 3.75em; }
+	section.brand div[class*="keyword_"] > .imgs_wrap { overflow: hidden; position: relative; }
+	section.brand div[class*="keyword_"] > .imgs_wrap img { width:100%; height:100%; object-fit:cover; }
+	section.brand div[class*="keyword_"] .info_wrap > p { font-size:1.5em; line-height:1.5; }
+	section.brand div[class*="keyword_"] .info_wrap > p > br.M { display:none; }
+	section.brand div[class*="keyword_"] .info_wrap > p > br.T { display:none; }
+	section.brand .keyword_01 { justify-content:center; height:20.8333vw; }
+	section.brand .keyword_01 > .imgs_wrap { width: 39.375vw; flex:1 1 100%; order:1; }
+	section.brand div[class*="keyword_01"] div.info_T { width:48%; order:2; }
+	section.brand div[class*="keyword_01"] div.info_T > h3 { /*margin-top:10vh;*/ margin-bottom:1.04166vw; }
+	section.brand div[class*="keyword_01"] div.info_D { /*flex:1 1 8%;*/ order:3; }
+	section.brand .keyword_02 { padding:10.4166vw 0; }
+	section.brand .keyword_02 > .imgs_wrap { width:100%; height: 23.95833vw; order: 2; margin:1.5625vw 0; }
+	section.brand .keyword_02 > .info_wrap { width:100%; }
+	section.brand .keyword_02 > .info_T{ margin-bottom:0; order:1; }
+	section.brand .keyword_02 > .info_D{ order:2; text-align:right; line-height:1.5; }
+	section.brand div.keyword_03 { display: flex; flex-wrap:wrap; flex-direction:column; align-content:flex-end; justify-content:center; height:41.666vh; text-align:right; }
+	section.brand .keyword_03 > .imgs_wrap { height: 20.8333vw; order:3; flex:1 1 100%;  }
+	section.brand div.keyword_03 > .info_T > h3{ width:100%; /*margin-top:3vh;*/ padding-right:2.60416vw; }
+	section.brand div.keyword_03 > .info_D { /*padding-top:1.0416vw; padding-right:2.60416vw;*/margin-right:50px; order:2; /*flex:1 1 50%;*/ }
+	section.brand .keyword_03 > div.info_wrap > h3.title { margin-bottom:2.60416vw; }
+	section.brand .keyword_03 > div.info_wrap > p { width:34.25vw; }
+
+	section.brand .en_typo { margin-top:-7.291vw; }
+	section.brand .en_typo > img { margin-left:-5.20833vw; opacity:0.9; }
+	section.brand .en_typo > p { font-family:"CormorantGaramond-Bold"; margin-top:2.083vw; font-size:2em; text-align:center; line-height:1.5; }
+	section.brand .en_typo > p > br.T{ display:none; }
+	section.brand .en_typo > p > br.M{ display:none; }
+
+	section.promise .inner_wrap { padding:19.1666vw 3.645vw 22.60416vw; }
+	section.promise h2 { position:relative; font-family:"CormorantGaramond-Bold"; font-size:3.125vw; margin-bottom:7.142vw; }
+	section.promise h2::before{ position:absolute; left:50%; top:50%; transform:translate(-50%, -50%) rotate(-8deg); content:""; display:inline-block; width:25.52083vw; height:18.54166vw; background:url("../images/story_brand/img_brand_proms_h2.png")no-repeat; background-size:100%; opacity:0.2; }
+	section.promise div + div { margin-top:7.5520vw; }
+	section.promise div{ position:relative; }
+	section.promise div::before { position:absolute; left:0; bottom:-0.2604vw; content:""; display:inline-block; width:100%; height:1px; background:#333; }
+	section.promise h3{ font-family:"NotoSerifKR-Light","NotoSerifSC-Regular"; width:100%; margin-bottom:0.9375vw; font-size:2.875em; text-align:right; }
+	section.promise p.title_en { font-family:"CormorantGaramond-Bold"; font-size:3em; }
+	section.promise p { display:inline-block; }
+	section.promise p:nth-of-type(2) { float:right; font-size:1.3541vw; }
+	section.promise .promise_03::after {position:absolute; right:-23%; bottom:-200%; content:""; display:inline-block; width:59.4791vw; height:37.1875vw; background:url("../images/story_brand/img_brand_proms_bg.png")no-repeat; background-size:100%; transform:rotate(154deg); opacity:0.3; }
+	section.promise div p > br.T{ display:none; }
+	section.promise div p > br.M{ display:none; }
+
+	section.desc_hr img{ display:block; width:100%; height:100%; object-fit:cover; filter:brightness(0.7); }
+	section.desc_hr .desc_wrap { position:absolute; top:50%; left:0; transform:translateY(-50%); margin-left:10vw; }
+	section.desc_hr p { font-size:1.75em; color:#fff; line-height:1.8; }
+	section.desc_hr p > br.M{ display:none; }
+
+	section.slogan { padding:16.4583vw 0; text-align:center; }
+	section.slogan h2 { position:relative; font-family:"NotoSerifKR-Light","NotoSerifSC-Regular"; font-size:2.1875vw; margin-bottom:1.5625em; }
+	section.slogan h2::before{ position:absolute; left:31.458vw; top:-0.78125vw; content:""; display:inline-block; width:4.4791vw; height:2.7083vw; background:url("../images/story_brand/img_brand_style_04_D.png")no-repeat; background-size:100%; }
+	section.slogan h2::after{ position:absolute; right:31.458vw; top:-0.78125vw; content:""; display:inline-block; width:4.4791vw; height:2.7083vw; background:url("../images/story_brand/img_brand_style_04_D.png")no-repeat; background-size:100%; transform:rotate(180deg); }
+	section.slogan p { font-size:1.4583vw; line-height:1.8; }
+	section.slogan p > br.T { display:none;}
+	section.slogan p > br.M { display:none;}
+	section.slogan p.en_slogan { font-family:"CormorantGaramond-Bold"; margin-top:1.5625vw; text-transform:uppercase; }
+
+
+
+
+}
+/* ============================== Desktop (end) ============================== */

@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+/*	==============================================================================	*/
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  index.css   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/*	==============================================================================	*/
+
+
+section.visual { width: 100%; height: 100vh; }
+section.visual .visual_info > h3 { font-family: "CormorantGaramond-Bold"; line-height: 1.1; }
+section.visual .visual_info > p.desc { font-family: "NotoSansKR-Regular"; line-height: 1.3; }
+
+section.brand picture.active { display: block; }
+section.brand picture { display: none; }
+section.brand div[class*="keyword_"] .info_wrap > p.title { font-family: "CormorantGaramond-Medium"; }
+section.brand div[class*="keyword_"] .info_wrap > p.desc { font-family: "NotoSansKR-Regular"; line-height: 1.2; }
+
+
+
+
+/* ============================= Mobile (start) ============================= */
+@media screen and (max-width: 767px) {
+
+/*section01.visul*/
+	h2 { font-size: 2em; text-align: left; padding-bottom:20px; }
+	section.visual { position:relative;}
+	section.visual img {position:absolute; left:50%; top:50%; transform: translate(-40%, -42%); width: 100%; height:90%; }
+	section.visual .visual_info { position: absolute; left:40%; top:58%; transform: translate(-50%, -50%); }
+	section.visual .visual_info > p.char_c {font-size: 4.75em; }
+	section.visual .visual_info > p.desc { width: 210px; padding-left: 10px; font-size: 0.875em;  text-align:left; }
+
+	/*section02.info*/
+	section.info {width: 100%; padding-top: 120px; }
+	section.info h2 { font-size: 2em; text-align: left; padding-bottom:50px; }
+	section.info .imgs_wrap { position:relative; width:90.3125vw; }
+	section.info .imgs_wrap img { display:block; width: 100%; height:100%; object-fit:cover; }
+	section.info .info_wrap { padding-top: 20px; text-align: center; }
+	section.info .info_wrap > p.text { font-size: 0.9375em; }
+	section.info .info_wrap span { display:none; }
+	section.info .info_wrap p.text br.t { display:none; }
+	
+	/*section03.process*/
+	section.process { position: relative; width: 100%; padding-top: 120px; }
+	section.process::before {content:""; position:absolute; right:0; top:60px; z-index: -1; width: 68.75vw; height: 62.5vw; display:inline-block; background: url("../images/story_history/ico_history_tree_R_D.png") no-repeat; background-size:100%; }
+	section.process::after {content:""; position:absolute; left:0; bottom:0; z-index: -1; width: 68.75vw; height: 62.5vw; display:inline-block; background: url("../images/story_history/ico_history_tree_L_D.png") no-repeat; background-size:100%; opacity: 0.6; }
+
+	section.process h2 { padding-bottom:50px; font-size: 2em; text-align: left; }
+	section.process .list_wrap { width:100%; margin: auto; padding:50px 0; border-top:2px solid #bbb; } 
+	section.process .list_wrap > ul > li { text-align:center; height:100px; }
+	section.process .list_wrap > ul > li > h3 { position:relative; width:33%; float:left; font-size:0.875em;
+	padding-right: 10px; }
+	section.process .list_wrap > ul > li > h3::after { content:""; position:absolute; right:0; top:-50px; display:inline-block; border: 1px solid #bbb; height:100px;}
+	section.process .list_wrap > ul > li > p.desc { position:relative; float:right; width:67%;  text-align:left; font-size:0.875em; padding-left: 10px; }
+	section.process .list_wrap > ul > li > p.desc > span::before { content:""; position:absolute; left:-5px; top:10px; display:inline-block; border: 4px solid #666; border-radius:40px; }
+
+	/*section04.transition*/
+	section.transition h2 { padding-bottom: 50px; font-size: 2em; text-align:left;  }
+	section.transition { width: 100%; background: url("../images/story_history/ico_history_transition_background_D.png")no-repeat; background-position:3vw 30%; background-size: 100%;}
+	section.transition .img_wrap { position:relative; padding-left: 15.625vw; text-align:left; font-size:0.875em; font-weight:bold;}
+	section.transition .img_wrap > p:nth-of-type(1){ position:absolute; left:40%; top:0; text-align:left; border-bottom:1px solid #666; width:130px; }
+	section.transition .img_wrap > p:nth-of-type(2){ position:absolute; left:40%; top:30%; text-align:left; border-bottom:1px solid #666; width:130px;}
+	section.transition .img_wrap > p:nth-of-type(3){ position:absolute; left:40%; top:60%; text-align:left; border-bottom:1px solid #666; width:130px;}
+	section.transition .img_wrap > p:nth-of-type(4){ position:absolute; left:40%; bottom:0; text-align:left; border-bottom:1px solid #666; width:130px;}
+	
+	section.transition .info_wrap { width: 265px; padding: 25px 0 0 25px; text-align: left; }
+	section.transition .info_wrap > h3 { padding-bottom:15px; font-size:1.25em; }
+	section.transition .info_wrap > p { font-size:0.875em; }
+	section.transition .info_wrap > p + p { margin-top:20px; }
+	section.transition .info_wrap p.none { display:none; }
+
+	/*section03.since*/
+	section.since { width: 100%; padding-top: 100px; }
+	section.since h2 {font-size:2.1875em; text-align:left; padding-bottom:30px; }
+	section.since::after { content:"Behind the Since";  font-family: "CormorantGaramond-Bold"; opacity: .5; position:absolute; bottom:175px; right:0; font-size:2.1875em; text-align:right; }
+	section.since  ul { display:flex; align-items: center; margin-bottom: 230px; }
+	section.since ul > li { flex:1; }
+	section.since ul > li + li { margin-left: 10px; }
+	section.since ul > li img { display: block; width: 100%; height:100%; object-fit:cover; }
+
+
+
+}
+/* ============================== Mobile (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Tablet (start) ============================= */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+/*section01.visul*/
+	h2 { font-size: 3.75em; text-align: left; padding-bottom:30px; }
+	section.visual .visual_info { position:relative;}
+	section.visual img {position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); width: 75%; height:70%; }
+	section.visual .visual_info { position: absolute; left:50%; top:50%; transform: translate(-50%, -50%); text-align:center; }
+	section.visual .visual_info > p.char_c { font-size: 9.125em; }
+	section.visual .visual_info > p.desc { width:500px; font-size: 1.5em; }
+
+	/*section02.info*/
+	section.info {width: 100%; padding-top: 120px; }
+	section.info h2 { font-size: 3.75em; text-align: left; padding-bottom:100px; }
+	section.info .imgs_wrap { position:relative; width:72.135416vw; }
+	section.info .imgs_wrap img { display:block; width: 100%; height:100%; object-fit:cover; }
+	section.info .info_wrap { padding-top: 27px; }
+	section.info .info_wrap > p.text { font-size: 1.25em; }
+	section.info .info_wrap > p.text br.m { display:none; }
+	
+	/*section03.process*/
+	section.process { position: relative; width: 100%; padding-top: 407px; }
+	section.process::before {content:""; position:absolute; right:0; top:60px; z-index: -1; width:638px; height:364px; display:inline-block; background: url("../images/story_history/ico_history_tree_R_D.png") no-repeat; background-size:100%; }
+	section.process::after {content:""; position:absolute; left:0; bottom:0; z-index: -1; width:768px; height:438px; display:inline-block; background: url("../images/story_history/ico_history_tree_L_D.png") no-repeat; background-size:100%; opacity: 0.6; }
+
+	section.process h2 { font-size: 3.75em; text-align: left; padding-bottom:50px; }
+	section.process .list_wrap { width:100%; margin: auto; padding:50px 0; border-top:2px solid #bbb; } 
+	section.process .list_wrap > ul > li { text-align:center; height:140px; }
+	section.process .list_wrap > ul > li > h3 { position:relative; width:50%; float:left; font-size:1.5em; }
+	section.process .list_wrap > ul > li > h3::after { content:""; position:absolute; right:0; top:-50px; display:inline-block; border: 1px solid #bbb; height:150px;}
+	section.process .list_wrap > ul > li > p.desc { position:relative; float:right; width:50%; font-size:1.5em; }
+	section.process .list_wrap > ul > li > p.desc > span::before { content:""; position:absolute; left:-6px; top:10px; display:inline-block; border: 5px solid #666; border-radius:40px; }
+
+	/*section04.transition*/
+	section.transition h2 { padding-bottom: 70px; font-size: 3.75em; text-align:left;  }
+	section.transition { width: 100%; margin: 150px auto; background: url("../images/story_history/ico_history_transition_background_D.png")no-repeat; background-position:0vw 4vw; background-size: 100%;}
+	section.transition .img_wrap { position:relative; width:600px; margin:70px auto 30px; text-align:center; font-size:1.5em; font-weight:bold;}
+	section.transition .img_wrap > p:nth-of-type(1){ position:absolute; left:0; top:25%; text-align:right; border-bottom:1px solid #666; width:200px; }
+	section.transition .img_wrap > p:nth-of-type(2){ position:absolute; right:0; top:25%; text-align:left; border-bottom:1px solid #666; width:200px;}
+	section.transition .img_wrap > p:nth-of-type(3){ position:absolute; left:0; top:85%; text-align:right; border-bottom:1px solid #666; width:200px;}
+	section.transition .img_wrap > p:nth-of-type(4){ position:absolute; right:0; top:85%; text-align:left; border-bottom:1px solid #666; width:200px;}
+	
+	section.transition .info_wrap { text-align:center; }
+	section.transition .info_wrap > h3 { padding:50px; font-size:3em; }
+	section.transition .info_wrap > p { font-size:1.5em; }
+	section.transition .info_wrap > p + p { margin-top:20px; }
+
+	/*section03.since*/
+	section.since { width: 100%; padding-top: 100px; margin-bottom: 300px; }
+	section.since h2 {font-size:5em; text-align:left; padding-bottom:30px; }
+	section.since::after { content:"Behind the Since";  font-family: "CormorantGaramond-Bold"; opacity: .5; position:absolute; bottom:100px; right:0; font-size:5em; text-align:right; }
+	section.since  ul { display:flex; align-items: center; margin-bottom: 230px; }
+	section.since ul > li { flex:1; }
+	section.since ul > li + li { margin-left: 30px; }
+	section.since ul > li img { display: block; width: 100%; height:100%; object-fit:cover; }
+
+}
+/* ============================== Tablet (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Desktop (start) ============================= */
+@media screen and (min-width: 1025px){
+
+	/*section01.visual*/
+	section.visual { position:relative;} 
+	section.visual .img_wrap {display:block; width:100%; height:100%;}
+	section.visual img {position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); object-fit:cover; }
+	section.visual .visual_info > p.char_c { position: absolute; left:50%; top:50%; transform: translate(-50%, -50%); font-size: 15.625em; }
+	section.visual .visual_info > p.desc { font-weight:bold;  position: absolute; left:50%; bottom:10%; transform: translate(-50%, -50%); font-size: 1.5em; text-align:center; line-height:1.6;}
+
+	/*section02.info*/
+	section.info {width: 100%; padding-top: 120px; }
+	section.info h2 { font-size: 3.75em; text-align: left; padding-bottom:100px; }
+	section.info .imgs_wrap { position:relative; width:58%; }
+	section.info .imgs_wrap img { display:block; width: 100%; height:100%; object-fit:cover; }
+	section.info .info_wrap { position:absolute; left:calc(58% + 30px); bottom:0; width: calc(42% - 30px); }
+	section.info .info_wrap > p.text { font-size: 1.25em; }
+	section.info .info_wrap p.text br.t { display:none; }
+	section.info .info_wrap p.text br.m { display:none; }
+	
+	/*section03.process*/
+	section.process { position: relative; width: 100%; padding-top: 407px; }
+	section.process::before {content:""; position:absolute; right:0; top:0; z-index: -1; width:980px; height:560px; display:inline-block; background: url("../images/story_history/ico_history_tree_R_D.png") no-repeat; background-size:100%; }
+	section.process::after {content:""; position:absolute; left:0; bottom:0; z-index: -1; width:980px; height:560px; display:inline-block; background: url("../images/story_history/ico_history_tree_L_D.png") no-repeat; background-size:100%; }
+
+	section.process h2 { font-size: 3.75em; text-align: left; padding-bottom:50px; }
+	section.process .list_wrap { width:79.58vw; margin: auto; padding:50px 0; border-top:2px solid #333; } 
+	section.process .list_wrap > ul > li { text-align:center; height:140px; }
+	section.process .list_wrap > ul > li > h3 { position:relative; width:50%; float:left; font-size:1.5em; }
+	section.process .list_wrap > ul > li > h3::after { content:""; position:absolute; right:0; top:-50px; display:inline-block; border: 1px solid #666; height:150px;}
+	section.process .list_wrap > ul > li > p.desc { position:relative; float:right; width:50%; font-size:1.5em; }
+	section.process .list_wrap > ul > li > p.desc > span::before { content:""; position:absolute; left:-6px; top:10px; display:inline-block; border: 5px solid #666; border-radius:40px; }
+
+	/*section04.transition*/
+	section.transition h2 { padding-bottom: 170px; font-size: 3.75em; text-align:left;  }
+	section.transition { width: 100%; margin: 150px auto; background: url("../images/story_history/ico_history_transition_background_D.png")no-repeat; background-position:50% -10%;}
+	section.transition .img_wrap { position:relative; width:700px; margin:70px auto 30px; text-align:center; font-size:1.5em; font-weight:bold;}
+	section.transition .img_wrap > p:nth-of-type(1){ position:absolute; left:0; top:25%; text-align:right; border-bottom:2px solid #666; width:200px; }
+	section.transition .img_wrap > p:nth-of-type(2){ position:absolute; right:0; top:25%; text-align:left; border-bottom:2px solid #666; width:200px;}
+	section.transition .img_wrap > p:nth-of-type(3){ position:absolute; left:0; top:85%; text-align:right; border-bottom:2px solid #666; width:200px;}
+	section.transition .img_wrap > p:nth-of-type(4){ position:absolute; right:0; top:85%; text-align:left; border-bottom:2px solid #666; width:200px;}
+	
+	section.transition .info_wrap { text-align:center; }
+	section.transition .info_wrap > h3 { padding:50px; font-size:3em; }
+	section.transition .info_wrap > p { font-size:1.5em; }
+	section.transition .info_wrap > p + p { margin-top:20px; }
+
+	/*section03.since*/
+	section.since { width: 100%; padding-top: 150px; margin-bottom: 300px; }
+	section.since h2 {font-size:5em; text-align:left; padding-bottom:30px; }
+	section.since::after { content:"Behind the Since";  font-family: "CormorantGaramond-Bold"; opacity: .5; position:absolute; bottom:100px; right:0; font-size:5em; text-align:right; }
+	section.since  ul { display:flex; align-items: center; margin-bottom: 230px; }
+	section.since ul > li { flex:1; }
+	section.since ul > li + li { margin-left: 30px; }
+	section.since ul > li img { display: block; width: 100%; height:100%; object-fit:cover; }
+
+	
+/* ============================== Desktop (end) ============================== */

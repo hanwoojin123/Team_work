@@ -1,0 +1,433 @@
+@charset "utf-8";
+
+/*	=======================================================================================	*/
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!						 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  enjoy_experience.css   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!						 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/*	=======================================================================================	*/
+
+section.visual { width: 100%; height: 100vh; }
+section.visual h2::before { content: ""; position: absolute; transform: translate(-40%, -15%); z-index: -1; display: inline-block; background: url("../images/enjoy_experience/img_index_nav_hover@2x.png") no-repeat; background-size: 100%; }
+
+/* ============================= Mobile (start) ============================= */
+@media screen and (max-width: 767px) {
+
+	._S { color: #bbb; font-size: 0.875rem; }
+
+	h2 { font-size: 2em; }
+	
+	section.visual h2 { margin-top: 19.7183vh; font-size: 3em; }
+	section.visual h2::before { width: 1.571428em; height: 1.571428em; }
+	section.visual .img_wrap { width: 100%; height: 25.3521vh; margin: 26px 0 40px; }
+	section.visual .img_wrap img { width: 100%; height: 100%; object-fit: cover; }
+	section.visual p{ font-family: "NotoSansKR-Medium"; font-size: 0.9375em; text-align: center; word-break: keep-all; line-height: 1.5; }
+	section.visual p:nth-of-type(1) {display:none; }
+	
+	section.visual p:last-child{ margin-top:20px; }
+	section.visual p.Desk { display:none; }
+
+	section.notice { padding:60px 0; }
+	section.notice .inner_wrap h2 { margin-bottom:1.4em; }
+	section.notice .inner_wrap > div + div { padding-top:1.4em; }
+	section.notice .inner_wrap > div { width:100%; text-align:center; line-height:1.5; }
+	section.notice .inner_wrap > div:last-child { padding-bottom:25px; }
+	section.notice div > h3 { font-family: "NotoSansKR-Medium"; font-weight:normal; font-size:1.25em; background:#202123; color:#fff; line-height:54px; }
+	section.notice .inner_wrap > div > p { font-size:0.875em; }
+	section.notice .inner_wrap > div > ul { font-size:0.875em; margin-left:3.125vw; }
+	section.notice .Apply_class > h3{ margin-bottom:4.1666vw; }
+	section.notice .Apply_class > p { margin:1.25em 0; }
+	section.notice .Apply_class > p > br.D { display:none; }
+	section.notice .Apply_class > p > br.T { display:none; }
+	section.notice .Apply_class > ul { text-align:left; color:#bbb; }
+	section.notice .time_class .times{ font-size:1em; text-align:center; }
+	section.notice .time_class > h4 { margin:1.25em 0; font-size:0.875em; font-weight:normal; }
+	section.notice .time_class .times > ul { font-family: "NotoSansKR-Regular"; font-size:0.875em; color:#5C5C5C; }
+	section.notice .time_class .times > ul:nth-child(2) { margin-top:0.625em; }
+	section.notice .time_class > p:nth-of-type(1){ /*font-family: "NotoSansKR-Medium";*/ margin:1.25em 0; }
+	section.notice .time_class p br.D{ display:none; }
+	section.notice .time_class p.recheck { font-size:0.875em; color:#5C5C5C; }
+	section.notice .precautions_class > ul > li { font-family: "NotoSansKR-Regular"; margin-top:1.4285em; }
+	section.notice .precautions_class > ul > li > br.D{ display:none; }
+	section.notice .precautions_class > ul > li > br.T{ display:none; }
+
+
+	section.curriculum { overflow-x:clip; overflow-y:visible; padding:60px 0; }
+	section.curriculum .inner_wrap { padding:0; }
+	section.curriculum::after{ position:absolute; right:-90px; bottom:-5%; z-index:-1; content:""; display:inline-block; width:400px; height:458px; background:url("../images/enjoy_experience/img_enjoy_experience_bg_02_D.png")no-repeat; background-size:100%; }
+	section.curriculum .bgs_wrap { position:absolute; left:0; top:-5%; z-index:-1; width:100%; }
+	section.curriculum .bgs_wrap img { width:100%; }
+	section.curriculum h2{ margin-bottom:32px; }
+	/*section.curriculum div[class*="step_"] + div { margin-top:100px;}*/
+	section.curriculum div[class*="step_"] .img_wrap{ display:block; width:100%;  object-fit:cover; vertical-align:top; }
+	section.curriculum div[class*="step_"] picture > img{ width:100%; height:100%; object-fit:cover; }
+	section.curriculum div[class*="step_"] .info_wrap { display:block; width:100%; margin:1.625em 0 2.875em; padding:0 4.6875vw; text-align:center; }
+	/*section.curriculum div[class*="step_"]:nth-child(odd) .info_wrap { text-align:right; }*/
+	section.curriculum div[class*="step_"] > .info_wrap h3{ font-family:"CormorantGaramond-Bold"; font-size:1.625em; margin-bottom:0.9em; }
+	section.curriculum div[class*="step_"] .info_wrap p{ font-size:0.875em; line-height:1.8; }
+	section.curriculum .step_02 > .info_wrap > p.recheck { margin-top:20px; font-size:0.875em; color:#5C5C5C; }
+	section.curriculum div[class*="step_"] > .info_wrap p > br.D { display:none; }
+	section.curriculum div[class*="step_"] > .info_wrap p > br.T { display:none; }
+
+
+	section.brewer { overflow-x:clip; overflow-y:visible; padding:100px 0; text-align:center; }
+	section.brewer > .bgs_wrap { position:absolute; left:0; bottom:-30%; width:100%; z-index:-1; }
+	section.brewer > .bgs_wrap img{ width:100%; height:100%; object-fit:cover; }
+	section.brewer .inner_wrap_02 > h3 { font-size:1em; margin: 2.8125em 0 0.875em; }
+	section.brewer .inner_wrap_02 > ul{ font-size:0.875em; line-height:1.8; }
+	section.brewer .inner_wrap_02 > ul.work_experience { display:none; }
+
+
+	section.photo { text-align:center; padding-bottom:12.5em; padding:100px 0; }
+	section.photo .photo_wrap > .img_wrap{ width:100%; }
+	section.photo .photo_wrap { margin:1.25em 0; }
+	section.photo .photo_wrap picture > img{ width:100%; height:100%; object-fit:cover; }
+	section.photo a.btn_common{ display:inline-block; padding:0.5em 3em 0.625em; font-size:1em; color:#fff; background:#202123; text-transform:uppercase; }
+	section.photo button { display:none; }
+	section.photo .photo_wrap > .img_wrap:nth-child(2) { display:none; }
+	section.photo .photo_wrap > .img_wrap:nth-child(3) { display:none; }
+
+
+
+	section.contact { padding: 60px 0 120px; }
+
+	section.contact h2 { margin-bottom: 1.25em; }
+
+	section.contact form { width: 100%; font-size: 1em; }
+
+	section.contact form > div { margin-bottom: 20px }
+
+	section.contact form label { display: block; margin-bottom: 10px; font-weight: bold; }
+	section.contact form input { -webkit-appearance:none; -moz-appearance:none; appearance: none; display: inline-block; width: 100%; height: 40px; padding: 0.625rem; border: none; background: #ddd; font-size: 0.875em; }
+	section.contact form select { -webkit-appearance:none; -moz-appearance:none; appearance: none; display: inline-block; width: 100%; height: 40px; padding: 0.625rem ; border: none; background-image: url("../images/enjoy_experience/img_enjoy_process_arrow.png"); background-repeat: no-repeat; background-position: 93% 50%; background-color: #ddd; font-size: 1em; vertical-align: middle; }
+
+	section.contact form input:focus { outline: none; }
+	section.contact form select:focus { outline: none; }
+
+
+	section.contact form > div:nth-of-type(1) { float: left; width: 48.25%; }
+	section.contact form > div:nth-of-type(2) { float: right; width: 48.25%; margin-left: 10px; }
+	section.contact form > div:nth-of-type(3) { clear: both; }
+	section.contact form > div:nth-of-type(3) select { display: inline-block; width: 48.25%; margin-left: 10px; }
+	section.contact form > div:nth-of-type(4) p { margin-top: 10px; font-size: 0.875em; word-break: keep-all; }
+	section.contact form > div:nth-of-type(4) p > br { display: none; }
+	section.contact form > div:nth-of-type(6) select { width: 25%; }
+
+
+	section.contact form input#user_fName { width: 100%; }
+	section.contact form input#user_LName { width: 100%; }
+	section.contact form input#date { width: 48.25%; }
+	section.contact form input#total { width: 100%; }
+	section.contact form input#user_mail { width: 100%; }
+	section.contact form input#user_phone { width: 71.42857%; margin-left: 10px; vertical-align: middle; }
+	
+	
+	section.contact form .terms_item { margin-bottom: 50px; }
+	section.contact form .terms_item > p { margin-bottom: 10px; font-weight: bold; }
+	section.contact form .terms_item > .term_box { overflow-x: hidden; overflow-y: scroll; width: 100%; height: 240px; padding: 10px 20px 0px 10px; margin-bottom: 20px; background: #ddd; color: #666; font-size: 0.875em; word-break: keep-all; line-height: 1.5; }
+	section.contact form .terms_item > .term_box::-webkit-scrollbar { display: inline-block; width: 8px; }
+	section.contact form .terms_item > .term_box::-webkit-scrollbar-track { background: transparent; }
+	section.contact form .terms_item > .term_box::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+
+
+	section.contact form .terms_item > .term_box li p.desc { margin-bottom: 20px; }
+	section.contact form .terms_item > .term_box li > ul { margin-bottom: 20px; }
+	section.contact form .terms_item > .term_box ul.long_ul > li { margin-bottom: 20px; }
+	section.contact form .terms_item > .term_box ul.long_ul dl { margin-bottom: 20px; }
+
+
+	section.contact form .terms_item > .check_term > input { width:24px; height:24px; margin:0; background:url("../images/enjoy_experience/checkbox.jpg")no-repeat; -webkit-appearance:none; -moz-appearance:none; appearance:none; vertical-align: middle; }
+	section.contact form .terms_item > .check_term > input:checked { background-position:-24px 0; }
+	section.contact form .terms_item > .check_term > label { display: inline-block; margin-left: 10px; margin-bottom: 0; font-size: 1rem; vertical-align: middle; }
+
+	section.contact form .btn_wrap { text-align: right; }
+	section.contact form .btn_wrap > button { padding: 0.8em 3em; background: #202123; color: #fff; }
+	section.contact form .btn_wrap > button.active { background: transparent; border: 1px solid #202123; color: #202123; }
+
+
+
+
+
+
+}
+/* ============================== Mobile (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Tablet (start) ============================= */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+	h2 { font-size: 3.75em; }
+	
+	section.visual h2 { margin-top: 21.484375vh; }
+	section.visual h2::before { width: 1.516em; height: 1.516em; }
+	section.visual .img_wrap { width: 100%; height: 24.4140625vh; margin: 40px 0 50px; }
+	section.visual .img_wrap img { width: 100%; height: 100%; object-fit: cover; }
+	section.visual p { padding:0 3.64583vw; font-family: "NotoSansKR-Medium"; font-size: 1.25em; text-align: center; line-height:1.5; }
+	section.visual p:last-child{ margin-top:55px; }
+	section.visual p.Desk { display:none; }
+	section.visual p > br.M { display: none; }
+
+	section.notice { padding:200px 0 100px; }
+	section.notice .inner_wrap h2 { margin-bottom:1em; }
+	section.notice .inner_wrap > div { width:100%; padding-bottom:2.5em; /*font-family: "NotoSansKR-Medium";*/ font-weight:normal; text-align:center; line-height:1.5; }
+	/*section.notice .inner_wrap > div:last-child { padding-bottom:14.6875em; }*/
+	section.notice div > h3 { height:2.909em; font-family: "NotoSansKR-Medium"; font-weight:normal; font-size:1.375em; background:#202123; color:#fff; line-height:2.909em; }
+	section.notice .inner_wrap > div > p { font-size:1.25em; }
+	section.notice .inner_wrap > div > ul { font-size:1.25em; }
+	section.notice .Apply_class > p { margin:1em 0; }
+	section.notice .Apply_class > p > br.D { display:none; }
+	section.notice .Apply_class > p > br.M { display:none; }
+	section.notice .Apply_class > ul { margin-left:23.4375vw; text-align:left; color:#bbb; }
+	section.notice .Apply_class > ul > li { font-size:0.9em; }
+	section.notice .time_class > h4 { margin:1em 0; font-size:1.25em; font-weight:normal; }
+	section.notice .time_class div.times{ font-size:1.25em; text-align:left; }
+	section.notice .time_class div.times > ul { display:inline-block; width:48%; text-align:center; }
+	section.notice .time_class > p:nth-of-type(1){ /*font-family: "NotoSansKR-Medium";*/ margin:1em 0; }
+	section.notice .time_class p br.D{ display:none; }
+	section.notice .time_class p br.M{ display:none; }
+	section.notice .time_class p.recheck { font-size:1.125em; color:#5C5C5C; }
+	section.notice .precautions_class > ul > li { margin-top:1em; }
+	section.notice .precautions_class > ul > li > br.D{ display:none; }
+	section.notice .precautions_class > ul > li > br.M{ display:none; }
+
+	section.curriculum { overflow-x:clip; overflow-y:visible; /*height:95.4101vh;*/ padding:100px 0; }
+	section.curriculum::after{ position:absolute; right:-380px; bottom:-5%; z-index:-1; content:""; display:inline-block; width:1196px; height:1196px; background:url("../images/enjoy_experience/img_enjoy_experience_bg_02_D.png")no-repeat; background-size:100%; }
+	section.curriculum .bgs_wrap { position:absolute; left:0; top:-10%; z-index:-1; width:100%; }
+	section.curriculum .bgs_wrap img { width:100%; height:100%; object-fit:cover; }
+	section.curriculum h2{ margin-bottom:1.54em; }
+	section.curriculum div[class*="step_"] + div { margin-top:6.25em;}
+	section.curriculum div[class*="step_"] .img_wrap{ display:block; width:100%;  object-fit:cover; vertical-align:top; }
+	section.curriculum div[class*="step_"] picture > img{ width:100%; height:100%; object-fit:cover; }
+	section.curriculum div[class*="step_"] .info_wrap { display:block; width:100%; margin-top:2.8125em; }
+	section.curriculum div[class*="step_"]:nth-child(odd) .info_wrap { text-align:right; }
+	section.curriculum div[class*="step_"] > .info_wrap h3{ font-family:"CormorantGaramond-Bold"; font-size:2.25em; margin-bottom:0.666em; }
+	section.curriculum div[class*="step_"] .info_wrap p{ font-size:1.125em; line-height:1.8; }
+	section.curriculum .step_02 > .info_wrap > p.recheck { font-size:1em; color:#5C5C5C; margin-top:20px; }
+	section.curriculum div[class*="step_"] > .info_wrap p > br.D { display:none; }
+	section.curriculum div[class*="step_"] > .info_wrap p > br.M { display:none; }
+
+	section.brewer { overflow-x:clip; overflow-y:visible; height:100vh; padding:100px 0; text-align:center; }
+	section.brewer > .bgs_wrap { position:absolute; left:0; bottom:0; z-index:-1; width:100%; }
+	section.brewer > .bgs_wrap img{ width:100%; height:100%; object-fit:cover; }
+	section.brewer .inner_wrap_02 > h2 { margin-bottom: 1.76em; }
+	section.brewer .inner_wrap_02 > h3 { font-size:1.625em; }
+	section.brewer .inner_wrap_02 > ul{ font-size:1.125em; line-height:1.8; }
+	section.brewer .inner_wrap_02 > ul.work_experience { margin:0.8333em 0 2.666em; }
+
+
+	section.photo { padding:100px 0; text-align:center; padding-bottom:6.25em; }
+	section.photo .photo_wrap > .img_wrap{ float:left; width:49%; }
+	section.photo .photo_wrap > div + div { margin-left:2%; }
+	section.photo .photo_wrap { margin:3.125em 0; }
+	section.photo .photo_wrap picture > img{ width:100%; height:100%; object-fit:cover; }
+	section.photo a.btn_common { display:inline-block; padding:1em 4.7777em 1.111em; font-size:1.125em; color:#fff; background:#202123; text-transform:uppercase; }
+	section.photo button { display:none; }
+	section.photo .photo_wrap > .img_wrap:nth-child(2) { display:none; }
+	
+
+	section.contact { padding: 100px 0 200px; }
+	section.contact h2 { font-size:3.75em; margin-bottom: 1.25em; }
+	section.contact form { width: 100%; font-size: 1.25em; }
+	section.contact form > div { margin-bottom: 30px }
+	section.contact form label { display: block; margin-bottom: 10px; font-weight: bold; }
+	section.contact form input { -webkit-appearance:none; -moz-appearance:none; appearance: none; display: inline-block; width: 100%; height: 60px; padding: 0.625rem; border: none; background: #ddd; font-size: 0.8181818em; }
+	section.contact form select { -webkit-appearance:none; -moz-appearance:none; appearance: none; display: inline-block; width: 100%; height: 60px; padding: 0.625rem ; border: none; background-image: url("../images/enjoy_experience/img_enjoy_process_arrow.png"); background-repeat: no-repeat; background-position: 90% 50%; background-color: #ddd;  font-size: 1em; vertical-align: middle; }
+
+	section.contact form input:focus { outline: none; }
+	section.contact form select:focus { outline: none; }
+
+
+	section.contact form > div:nth-of-type(1) { float: left; display: inline-block; width: 48.5%; }
+	section.contact form > div:nth-of-type(2) { float: right; display: inline-block; width: 48.5%; margin-left: 20px; }
+	section.contact form > div:nth-of-type(3) { clear: both; }
+	section.contact form > div:nth-of-type(3) select { display: inline-block; width: 26.11940%; margin-left: 20px; }
+	section.contact form > div:nth-of-type(4) p { display: inline-block; margin-left: 20px; font-size: 0.727272em; vertical-align: middle; color:#bbb; }
+	section.contact form > div:nth-of-type(6) select { width: 22.3880%; }
+
+
+	section.contact form input#user_fName { width: 100%; }
+	section.contact form input#user_LName { width: 100%; }
+	section.contact form input#date { width: 32.3383%; }
+	section.contact form input#total { width: 48.5%; }
+	section.contact form input#user_mail { width: 48.5%; }
+	section.contact form input#user_phone { width: 48.5%; margin-left: 20px; vertical-align: middle; }
+
+
+	section.contact form .terms_item { margin-bottom: 100px; }
+	section.contact form .terms_item > p { margin-bottom: 10px; font-weight: bold; }
+	section.contact form .terms_item > .term_box { overflow-x: hidden; overflow-y: scroll; width: 100%; height: 240px; padding: 30px 40px 0px 30px; margin-bottom: 20px; background: #ddd; color: #666; font-size: 1rem; word-break: keep-all; line-height: 1.5; }
+	section.contact form .terms_item > .term_box::-webkit-scrollbar { display: inline-block; width: 8px; }
+	section.contact form .terms_item > .term_box::-webkit-scrollbar-track { background: transparent; }
+	section.contact form .terms_item > .term_box::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+
+	section.contact form .terms_item > .term_box li p.desc { margin-bottom: 30px; }
+	section.contact form .terms_item > .term_box li > ul { margin-bottom: 30px; }
+	section.contact form .terms_item > .term_box ul.long_ul > li { margin-bottom: 30px; }
+	section.contact form .terms_item > .term_box ul.long_ul dl { margin-bottom: 30px; }
+
+	section.contact form .terms_item > .check_term > input { width:24px; height:24px; margin:0; background:url("../images/enjoy_experience/checkbox.jpg")no-repeat; -webkit-appearance:none; -moz-appearance:none; appearance:none; vertical-align: middle; }
+	section.contact form .terms_item > .check_term > input:checked { background-position:-24px 0; }
+	section.contact form .terms_item > .check_term > label { display: inline-block; margin-left: 10px; margin-bottom: 0; font-size: 1rem;  }
+
+	section.contact form .btn_wrap { text-align: right; }
+	section.contact form .btn_wrap > button { padding: 0.8em 3em; background: #202123; color: #fff; }
+	section.contact form .btn_wrap > button.active { background: transparent; border: 1px solid #202123; color: #202123; }
+	
+
+	
+	
+
+
+
+
+
+}
+/* ============================== Tablet (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Desktop (start) ============================= */
+@media screen and (min-width: 1025px){
+
+
+
+	h2 { font-size: 3.75em; }
+
+	section.visual h2 { margin-top: 21.0416vh; font-size: 4.5em }
+	section.visual h2::before { width: 1.3333em; height: 1.30555em; }
+	section.visual .img_wrap { width: 100%; height: 31.25vh; margin: 2.0833vw 0 2.6041vw; }
+	section.visual .img_wrap img { width: 100%; height: 100%; object-fit: cover; }
+	section.visual p { font-family: "NotoSansKR-Medium"; font-size: 1.25em; text-align: center; }
+	section.visual p.Desk { margin-bottom:2.8645vw; } 
+	section.visual p > br { display: none; }
+
+
+	section.notice { padding:260px 0 130px; }
+	section.notice .inner_wrap h2 { margin-bottom:1em; }
+	section.notice .inner_wrap > div { float:left; width:calc((100% - 48px) / 3); text-align:center; line-height:1.5; }
+	section.notice .inner_wrap > div + div { margin-left:24px; }
+	section.notice div > h3 { height:120px; font-family: "NotoSansKR-Medium"; font-weight:normal; font-size:1.875em; background:#202123; color:#fff; line-height:120px; }
+	section.notice .inner_wrap > div > p { font-size:1.25em; }
+	section.notice .inner_wrap > div > ul { font-size:1.25em; color:#bbb; }
+	section.notice .Apply_class > p { margin:1.5em 0 3em; }
+	section.notice .Apply_class > p > br.M { display:none; }
+	section.notice .Apply_class > ul { margin-left:2.08333vw;  text-align:left; color:#5C5C5C; }
+	section.notice .Apply_class > ul > li { font-size:0.9em; }
+	section.notice .time_class > h4 { margin: 1.5em 0 1em; font-size:1.25em; font-weight:normal; }
+	section.notice .time_class div.times{ margin-left:5.20833vw; font-size:1.25em; text-align:left; }
+	section.notice .time_class p { margin:1em 0 1em; }
+	section.notice .time_class p br.M{ display:none; }
+	section.notice .time_class p.recheck { margin:0; font-size:1.25em; color:#5C5C5C; }
+	section.notice .precautions_class > ul > li { margin-top:1.5em; color:#333; }
+	section.notice .precautions_class > ul > li > br.T{ display:none; }
+	section.notice .precautions_class > ul > li > br.M{ display:none; }
+
+
+	section.curriculum { overflow-x:clip; overflow-y:visible; padding:130px 0; }
+	section.curriculum .bgs_wrap { position:absolute; left:0; top:-10%; z-index:-1; }
+	section.curriculum h2{ margin-bottom:9.375vw; }
+	section.curriculum div[class*="step_"] + div { margin-top:11.9791vw;}
+	section.curriculum div[class*="step_"] .img_wrap{ display:inline-block; height:100%; object-fit:cover; vertical-align:top; }
+	section.curriculum div[class*="step_"] picture > img{ width:100%; height:100%; object-fit:cover; }
+	section.curriculum div[class*="step_"] > .info_wrap h3{ font-family:"CormorantGaramond-Bold"; font-size:2.625em; }
+	section.curriculum div[class*="step_"] .info_wrap p{ font-size:1.25em; line-height:1.8; }
+	section.curriculum div[class*="step_"]:nth-child(odd) > .img_wrap{ width:42.3177%; }
+	section.curriculum div[class*="step_"]:nth-child(odd) { display:flex; flex-direction:row-reverse; gap:5.5208vw; text-align:right; }
+	section.curriculum div[class*="step_"]:nth-child(odd) > info_wrap { display:inline-flex; flex-direction:column; justify-content:center; height:26.0416vw; }
+	section.curriculum div[class*="step_"]:nth-child(even) > .img_wrap{ width:49.21875%; }
+	section.curriculum div[class*="step_"]:nth-child(even) > .info_wrap { display:inline-block; width:47.91725%; height:26.0416vw; margin-left:2.864%; }
+	section.curriculum .step_01 > .info_wrap h3 { margin:6.7708vw 0 1.40625vw; }
+	section.curriculum .step_02 > .info_wrap h3 { margin: 3.6458vw 0 1.30208vw; }
+	section.curriculum .step_02 > .info_wrap > p.recheck { font-size:1.125em; color:#5C5C5C; margin-top:1.5625vw; }
+	section.curriculum .step_03 { position:relative; }
+	section.curriculum .step_03::after{ position:absolute; right:-26%; top:-55%; content:""; display:inline-block; width:70%; height:62.3958vw; background:url("../images/enjoy_experience/img_enjoy_experience_bg_02_D.png")no-repeat; background-size:100%; }
+	section.curriculum .step_03 > .info_wrap h3 { margin: 7.8125vw 0 1.5625vw; }
+	section.curriculum .step_04 > .info_wrap h3 { margin: 6.7708vw 0 1.5625vw; }
+	section.curriculum div[class*="step_"] > .info_wrap p > br.T { display:none; }
+	section.curriculum div[class*="step_"] > .info_wrap p > br.M { display:none; }
+
+
+	section.brewer { overflow-x:clip; overflow-y:visible; padding:130px 0;  }
+	section.brewer > .bgs_wrap { position:absolute; left:0; bottom:-25%; z-index:-1; width:100%; }
+	section.brewer > .bgs_wrap img{ width:100%; height:100%; object-fit:cover; }
+	section.brewer .inner_wrap_02 { padding:0 15.625vw }
+	section.brewer .inner_wrap_02 > h2 { margin-bottom: 167px; }
+	section.brewer .inner_wrap_02 > h3 { font-size:1.875em; margin-bottom:2.44791vw; }
+	section.brewer .inner_wrap_02 > ul{ font-size:1.375em; line-height:1.8; }
+	section.brewer .inner_wrap_02 > ul.qualification{ text-align:right; }
+
+
+	section.photo { padding:130px 10vw; }
+	section.photo h2 { text-align:left; margin-bottom:3.3333vw; }
+	section.photo .photo_wrap > .img_wrap{ float:left; width:calc((100% - 36px) / 3); height:25em; }
+	section.photo .photo_wrap > div + div { margin-left:18px; }
+	section.photo .photo_wrap picture > img{ width:100%; height:100%; object-fit:cover; }
+	section.photo a.btn_common { display:none; }
+	section.photo button.btn_prew { position:absolute; left:-10vw; bottom:0; width:10vw; height:25em; }
+	section.photo button.btn_prew > span { display:inline-block; width:6.45833vw; height:6.45833vw; margin-left:1.71875vw; background:url("../images/enjoy_experience/enjoy_photo_prevtBtn.png")no-repeat; background-size:100%; }
+	section.photo button.btn_next { position:absolute; right:-10vw; bottom:0; width:10vw; height:25em; }
+	section.photo button.btn_next > span { display:inline-block; width:6.45833vw; height:6.45833vw; margin-left:1.71875vw; background:url("../images/enjoy_experience/enjoy_photo_prevtBtn.png")no-repeat; background-size:100%; transform:rotate(180deg); }
+
+
+	section.contact { padding:130px 0 260px; }
+	section.contact h2 { margin-bottom: 1em; }
+	section.contact form { width: 804px; margin: 0 auto; font-size: 1.375em; }
+	section.contact form > div { margin-bottom: 30px }
+	section.contact form label { display: block; margin-bottom: 10px; font-weight: bold; }
+	section.contact form input { -webkit-appearance:none; -moz-appearance:none; appearance: none; display: inline-block; width: 100%; height: 60px; padding: 0.625rem; border: none; background: #ddd; font-size: 0.8181818em; }
+	section.contact form select { -webkit-appearance:none; -moz-appearance:none; appearance: none; display: inline-block; width: 100%; height: 60px; padding: 0.625rem ; border: none; background-image: url("../images/enjoy_experience/img_enjoy_process_arrow.png"); background-repeat: no-repeat; background-position: 90% 50%; background-color: #ddd;  font-size: 1em; vertical-align: middle; }
+	section.contact form input:focus { outline: none; }
+	section.contact form select:focus { outline: none; }
+	section.contact form > div:nth-of-type(1) { float: left; display: inline-block; width: 48.5%; }
+	section.contact form > div:nth-of-type(2) { float: right; display: inline-block; width: 48.5%; margin-left: 24px; }
+	section.contact form > div:nth-of-type(3) { clear: both; }
+	section.contact form > div:nth-of-type(3) select { display: inline-block; width: 26.11940%; margin-left: 24px; }
+	section.contact form > div:nth-of-type(4) p { display: inline-block; margin-left: 24px; font-size: 0.727272em; vertical-align: middle; }
+	section.contact form > div:nth-of-type(6) select { width: 22.3880%; }
+
+	section.contact form input#user_fName { width: 100%; }
+	section.contact form input#user_LName { width: 100%; }
+	section.contact form input#date { width: 32.3383%; }
+	section.contact form input#total { width: 48.5%; }
+	section.contact form input#user_mail { width: 48.5%; }
+	section.contact form input#user_phone { width: 48.5%; margin-left: 24px; vertical-align: middle; }
+
+	section.contact form .terms_item { margin-bottom: 100px; }
+	section.contact form .terms_item > p { margin-bottom: 10px; font-weight: bold; }
+	section.contact form .terms_item > .term_box { overflow-x: hidden; overflow-y: scroll; width: 100%; height: 240px; padding: 30px 40px 0px 30px; margin-bottom: 20px; background: #ddd; color: #666; font-size: 1rem; word-break: keep-all; line-height: 1.5; }
+
+	section.contact form .terms_item > .term_box::-webkit-scrollbar { display: inline-block; width: 8px; }
+	section.contact form .terms_item > .term_box::-webkit-scrollbar-track { background: transparent; }
+	section.contact form .terms_item > .term_box::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+
+	section.contact form .terms_item > .term_box li p.desc { margin-bottom: 30px; }
+	section.contact form .terms_item > .term_box li > ul { margin-bottom: 30px; }
+	section.contact form .terms_item > .term_box ul.long_ul > li { margin-bottom: 30px; }
+	section.contact form .terms_item > .term_box ul.long_ul dl { margin-bottom: 30px; }
+
+	section.contact form .terms_item > .check_term > input { width:24px; height:24px; margin:0; background:url("../images/enjoy_experience/checkbox.jpg")no-repeat; -webkit-appearance:none; -moz-appearance:none; appearance:none; }
+	section.contact form .terms_item > .check_term > input:checked { background-position:-24px 0; }
+	section.contact form .terms_item > .check_term > label { display: inline-block; margin-left: 10px; margin-bottom: 0; font-size: 1rem; vertical-align: top; }
+
+	section.contact form .btn_wrap { text-align: right; }
+	section.contact form .btn_wrap > button { padding: 0.8em 3em; background: #202123; color: #fff; }
+	section.contact form .btn_wrap > button:hover { background: transparent; border: 1px solid #202123; color: #202123; }
+
+	
+
+
+
+
+
+
+
+
+}
+/* ============================== Desktop (end) ============================== */

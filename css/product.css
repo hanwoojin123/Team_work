@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+/*	==============================================================================	*/
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  index.css   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/*	==============================================================================	*/
+
+
+/* ============================= Mobile (start) ============================= */
+@media screen and (max-width: 767px) {
+
+
+	br.M { display: none; }
+
+	img.transform { transform: translate(6%, 0); }
+
+
+	section.visual { overflow-x: clip; overflow-y: visible; position: relative; width: 100%; height: 100vh; z-index: -1; }
+	section.visual > div.bg_wrap { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+    section.visual > div.bg_wrap > img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+	section.visual > div.info_wrap { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; padding: 0 4.6875vw; text-align: center; }
+	section.visual > div.info_wrap > h2 { font-size: 3.75em; margin-bottom:  0.5em; opacity: 0.4; }
+	section.visual > div.info_wrap > p.title { font-family: "NotoSansKR-Medium"; font-size: 0.9375em; padding: 0 ;  word-break: keep-all; }
+
+
+	section.content > div.cont_wrap { position: relative; }
+	section.content > div.cont_wrap > div:not(.active){ display: none; }
+
+    section.content {  overflow: visible; position: sticky; top: 0; }
+	section.content > div.btns_wrap { position: sticky; top: 0; text-align: center; z-index: 1; padding: 3px 0; }
+	section.content > div.btns_wrap > button { position: relative; font-family: "NotoSansKR-Medium"; font-size: 5vw; line-height: 2; }
+	section.content > div.btns_wrap > button + button { margin-left: 20px; }
+	section.content > div.btns_wrap > button + button::before { content: ""; position: absolute; display: block; top: 50%; left: -10px; transform: translate(-50%, -50%); width: 2px; height: 60%; background: #707070; }
+	section.content > div.btns_wrap > button:nth-of-type(3)::before { display: none; }
+	section.content > div.btns_wrap > button.active > span { border-bottom: 1px solid #707070; }
+
+
+	section.content > div.cont_wrap ul { width: 100%; max-width: 1363px; margin: 0 auto; padding: 6.25em 0 7.5em; }
+	section.content > div.cont_wrap ul > li { position: relative; }
+	section.content > div.cont_wrap ul > li > h3.h3_M { display: block; font-family: "NotoSansKR-Bold"; font-size: 0.875em; text-align: center; }
+	section.content > div.cont_wrap ul > li + li { margin-top: 6.25em; }
+	section.content > div.cont_wrap ul > li > div.img_wrap { position: relative; text-align: center; margin-bottom: 1.25em; }
+	section.content > div.cont_wrap ul > li > div.img_wrap > img:nth-of-type(1) { position: absolute; top: 55%; left: 48%; transform: translate(-50%, -50%); width: 195px; z-index: -1; }
+	section.content > div.cont_wrap ul > li > div.img_wrap > img:nth-of-type(2) { height: 221px; }
+	section.content > div.cont_wrap ul > li > div.info_wrap { display: none; }
+	section.content > div.cont_wrap ul > li.on > div.info_wrap { position: absolute; top: 0; left: 50%; transform: translate(-50%, 0); display: block; width: 85%; height: auto; padding: 20px; background: #eee;  word-break: keep-all; }
+	section.content > div.cont_wrap ul > li > div.info_wrap > h3 { font-family: "NotoSansKR-Bold"; font-size: 1.4375em; margin-bottom: 0.4347em; }
+	section.content > div.cont_wrap ul > li > div.info_wrap > p.desc { position: relative; margin-bottom: 2.1428em; font-size: 0.875em; }
+	section.content > div.cont_wrap ul > li > div.info_wrap > p.desc > span { display: none; }
+	section.content > div.cont_wrap ul > li > div.info_wrap > p.desc::before { content: ""; position: absolute; display: block; bottom: -15px; transform: translate(0, 50%); left: 0; width: 100%; height: 1px; background: #333; }
+	section.content > div.cont_wrap ul > li > div.info_wrap > div.detail > p { font-size: 0.875em; }
+	section.content > div.cont_wrap ul > li > div.info_wrap > div.detail > p + p { margin-top: 1.0714em; }
+	section.content > div.cont_wrap ul > li > div.info_wrap > div.detail > p > span:nth-of-type(1) { font-family: "NotoSansKR-Bold"; margin-right: 0.7142em; }
+	section.content > div.cont_wrap ul > li > button.btn_more { position: absolute; display: block; bottom: 2px; right: 23%; width: 16px; height: 16px; background: url("../images/product/ico_product_open.png") no-repeat center; background-size: 100%; }
+	section.content > div.cont_wrap ul > li.on > button.btn_more { position: absolute; display: block; top: 5px; right: 10%; width: 16px; height: 16px; background: url("../images/product/ico_product_close.png") no-repeat center; background-size: 100%; }
+
+
+}
+/* ============================== Mobile (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Tablet (start) ============================= */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	
+	
+	br.T { display: none; }  
+
+	h3.h3_M { display: none; }
+
+	img.transform { transform: translate(6%, 0); }
+
+
+	section.visual { overflow-x: clip; overflow-y: visible; position: relative; width: 100%; height: 100vh; z-index: -1; }
+	section.visual > div.bg_wrap { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+    section.visual > div.bg_wrap > img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+	section.visual > div.info_wrap { position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); width:100%; text-align: center; }
+	section.visual > div.info_wrap > h2 { font-size: 8.125em; margin-bottom: 0.3846em; opacity: 0.4; }
+	section.visual > div.info_wrap > p.title { width: 100%; font-family: "NotoSansKR-Medium"; font-size: 1.25em;  word-break: keep-all; }
+    
+
+	section.content > div.cont_wrap { position: relative; }
+    section.content > div.cont_wrap > div:not(.active){ display: none; }
+
+    section.content {  overflow: visible; position: sticky; top: 0;  }
+	section.content > div.btns_wrap { position: sticky; top: 0; text-align: center; z-index: 1; padding: 20px 0; }
+	section.content > div.btns_wrap > button { position: relative; margin-left: 40px; font-family: "NotoSansKR-Medium"; font-size: 2.6041vw; }
+    section.content > div.btns_wrap > button:nth-of-type(1) { margin-left: 0; }
+	section.content > div.btns_wrap > button::before { content: ""; position: absolute; display: block; top: 50%; left: -20px; transform: translate(-50%, -50%); width: 2px; height: 60%; background: #707070; }
+    section.content> div.btns_wrap > button:nth-of-type(1)::before { display: none; }
+	section.content > div.btns_wrap > button.active > span { border-bottom: 1px solid #707070; }
+
+
+	section.content > div.cont_wrap ul { width: 100%; max-width: 1363px; margin: 0 auto; padding: 12.5em 0 14.375em; }
+	section.content > div.cont_wrap ul > li { display: flex; align-items: center; }
+	section.content > div.cont_wrap ul > li + li { margin-top: 12.5em; }
+	section.content > div.cont_wrap ul > li > div.img_wrap { position: relative; flex-basis: 50%; text-align: center; }
+	section.content > div.cont_wrap ul > li > div.img_wrap > img:nth-of-type(1) { position: absolute; top: 55%; left: 48%; transform: translate(-50%, -50%); width: 270px; z-index: -1; }
+	section.content > div.cont_wrap ul > li > div.img_wrap > img:nth-of-type(2) { height: 305px; }
+	section.content > div.cont_wrap ul > li > div.info_wrap { flex-basis: 50%; padding-right: 1.875em;  word-break: keep-all; }
+	section.content > div.cont_wrap ul > li > div.info_wrap > h3 { font-family: "NotoSansKR-Bold"; font-size: 1.875em; margin-bottom: 0.6666em;  }
+	section.content > div.cont_wrap ul > li > div.info_wrap > p.desc { position: relative; margin-bottom: 3.125em; padding-right: 20px; }
+	section.content > div.cont_wrap ul > li > div.info_wrap > p.desc > span { display: none; }
+	section.content > div.cont_wrap ul > li > div.info_wrap > p.desc::before { content: ""; position: absolute; display: block; bottom: -25px; transform: translate(0, 50%); left: 0; width: 100%; height: 1px; background: #333; }
+	section.content > div.cont_wrap ul > li > div.info_wrap > div.detail > p + p { margin-top: 1.25em; }
+	section.content > div.cont_wrap ul > li > div.info_wrap > div.detail > p > span:nth-of-type(1) { font-family: "NotoSansKR-Bold"; margin-right: 0.9375em; }
+
+
+}
+/* ============================== Tablet (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Desktop (start) ============================= */
+@media screen and (min-width: 1025px){
+
+    br.D { display: none; }
+
+	h3.h3_M { display: none; }
+
+	img.transform { transform: translate(6%, 0); }
+
+
+	section.visual { overflow-x: clip; overflow-y: visible; position: relative; width: 100%; height: 100vh; z-index: -1; }
+	section.visual > div.bg_wrap { position: absolute; top: 0; left: 0; width: 100%; z-index: -1; }
+    section.visual > div.bg_wrap > img { display: block; width: 100%; height: 100%; object-fit: cover; transform: translate(-2%, -22%) }
+
+	section.visual > div.info_wrap { position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+	section.visual > div.info_wrap > h2 { font-size: 18.125em; opacity: 0.4; }
+	section.visual > div.info_wrap > p.title { font-family: "NotoSansKR-Medium"; font-size: 1.5em;  word-break: keep-all; }
+
+
+	section.content > div.cont_wrap { position: relative; }
+    section.content > div.cont_wrap > div:not(.active){ display: none; }
+
+    section.content { overflow: visible; position: sticky; top: 0; }
+	section.content > div.btns_wrap { position: sticky; top: 0; text-align: center; z-index: 1; padding: 20px 0; margin-top: 13em; }
+	section.content > div.btns_wrap > button { position: relative; margin-left: 70px; font-family: "NotoSansKR-Medium"; font-size: 1.5625vw; }
+    section.content > div.btns_wrap > button:nth-of-type(1) { margin-left: 0; }
+	section.content > div.btns_wrap > button::before { content: ""; position: absolute; display: block; top: 50%; left: -35px; transform: translate(50%, -50%); width: 2px; height: 60%; background: #707070; }
+    section.content > div.btns_wrap > button:nth-of-type(1)::before { display: none; }
+	section.content > div.btns_wrap > button.active > span { border-bottom: 2px solid #707070; }
+
+	section.content > div.cont_wrap ul { width: 100%; max-width: 1363px; margin: 0 auto; padding: 17.5em 0 21.25em; }
+	section.content > div.cont_wrap ul > li { display: flex; align-items: center; }
+	section.content > div.cont_wrap ul > li + li { margin-top: 17.5em; }
+	section.content > div.cont_wrap ul > li > div.img_wrap { position: relative; flex-basis: 50%; text-align: center; }
+	section.content > div.cont_wrap ul > li > div.img_wrap > img:nth-of-type(1) { position: absolute; top: 55%; left: 48%; transform: translate(-50%, -50%); z-index: -1 }
+	section.content > div.cont_wrap ul > li > div.img_wrap > img:nth-of-type(2) { height: 584px; }
+	section.content > div.cont_wrap ul > li > div.info_wrap { flex-basis: 50%; padding-right: 6.25em;  word-break: keep-all; }
+	section.content > div.cont_wrap ul > li > div.info_wrap > h3 { font-family: "NotoSansKR-Bold"; font-size: 3.75em; margin-bottom: 0.75em; }
+	section.content > div.cont_wrap ul > li > div.info_wrap > p.desc { position: relative; margin-bottom: 5.3125em; padding-right: 20px; }
+	section.content > div.cont_wrap ul > li > div.info_wrap > p.desc::before { content: ""; position: absolute; display: block; bottom: -27px; left: 0; transform: translate(0, -50%); width: 100%; height: 1px; background: #333; }
+	section.content > div.cont_wrap ul > li > div.info_wrap > div.detail > p { font-size: 1.25em; }
+	section.content > div.cont_wrap ul > li > div.info_wrap > div.detail > p + p { margin-top: 2em; }
+	section.content > div.cont_wrap ul > li > div.info_wrap > div.detail > p > span:nth-of-type(1) { font-family: "NotoSansKR-Bold"; margin-right: 1.25em; }
+
+
+}
+/* ============================== Desktop (end) ============================== */

@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/*	==============================================================================	*/
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  event.css   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/*	==============================================================================	*/
+
+span.category { display: inline-block; }
+.category[class~="_color_01"] { color: #333; font-family: "NotoSansKR-Medium"; }
+.category[class~="_color_02"] { color: #fff; font-family: "NotoSansKR-Medium"; }
+.category[class~="_bg_01"] { background: #fff; }
+.category[class~="_bg_02"] { background: #333; }
+
+section.visual { width: 100%; height: 100vh; }
+section.visual h2::before { content: ""; position: absolute; transform: translate(-40%, -15%); z-index: -1; display: inline-block; background: url("../images/img_index_nav_hover@2x.png") no-repeat; background-size: 100%; }
+
+/* ============================= Mobile (start) ============================= */
+@media screen and (max-width: 767px) {
+
+
+	.btn_more[class~="_L"] { padding: 0.67857142em 2.5em 0.8214em; }
+
+	.category[class~="_M"] { padding: 0.333em 0.666em; }
+	.category[class~="_L"] { padding: 0.428571em 0.9285714em; }
+	
+	h2 { font-size: 2em; }
+	
+	section.visual h2 { margin-top: 19.7183vh; font-size: 3em; }
+	section.visual h2::before { width: 1.571428em; height: 1.571428em; }
+	section.visual .img_wrap { width: 100%; height: 25.3521vh; margin: 26px 0 40px; }
+	section.visual .img_wrap img { width: 100%; height: 100%; object-fit: cover; }
+	section.visual p.desc { padding: 0 15px; font-family: "NotoSansKR-Medium"; font-size: 0.9375em; text-align: center; }
+
+	section.progress h2 { margin: 1.76vh 0 1.25em; }
+	section.progress .img_wrap { position: relative; width: 100%; height: 77.464vh; }
+	section.progress .img_wrap img { width: 100%; object-fit: cover; }
+	section.progress .info_wrap { position: absolute; left: 7.8125vw; top: 6.152vh; }
+	section.progress .info_wrap > span { font-size: 0.875em; }
+	section.progress .info_wrap > h3 { margin: 0.357em 0 0.5357em; color: #fff; font-family: "NotoSansKR-Bold"; font-style: normal; font-size: 1.75em; line-height: 1.3; }
+	section.progress .info_wrap > p { color: #fff; font-family: "NotoSansKR-Medium"; font-size: 0.9375em; }
+	section.progress .info_wrap > p:first-of-type > span { display: none; }
+	section.progress .info_wrap > p:last-of-type { display: none; }
+
+	section.ended { margin-bottom: 31.25vh; }
+	section.ended h2 { margin: 14.0845vh 0 1.25em; }
+	section.ended ul { display: flex; flex-wrap: wrap; flex-direction: column; justify-content: space-between; row-gap: 30px; width: 100%; margin-bottom: 80px; }
+	section.ended ul > li { flex: 1 0 100%; border: 1px solid #333; background: #fff; }
+	section.ended ul > li > a { display: block; width: 100%; }
+	section.ended ul > li > a img { width: 100%; object-fit: cover; }
+	section.ended ul > li .info_wrap { padding: 0.9375em 1.25em; border-top: 1px solid #333; }
+	section.ended ul > li .info_wrap > span { margin-bottom: 0.714285em; font-size: 0.75em }
+	section.ended ul > li .info_wrap > p.date { display: none; }
+	section.ended ul > li .info_wrap > p.title { font-family: "NotoSansKR-Bold"; }
+	section.ended ul > li:nth-of-type(5) { display: none; }
+	section.ended ul > li:nth-of-type(6) { display: none; }
+	section.ended .btn_more { display: block; margin: 0 auto; font-size: 0.875em; }
+
+
+}
+/* ============================== Mobile (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Tablet (start) ============================= */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+	.btn_more[class~="_L"] { padding: 0.8125em 2.5em 1.0625em; }
+
+	.category[class~="_M"] { padding: 0.3125em 0.4375em; }
+	.category[class~="_L"] { padding: 0.625em 1.375em; }
+
+	h2 { font-size: 3.75em; }
+	
+	section.visual h2 { margin-top: 21.484375vh; }
+	section.visual h2::before { width: 1.516em; height: 1.516em; }
+	section.visual .img_wrap { width: 100%; height: 24.4140625vh; margin: 40px 0 50px; }
+	section.visual .img_wrap img { width: 100%; height: 100%; object-fit: cover; }
+	section.visual p.desc { font-family: "NotoSansKR-Medium"; font-size: 1.25em; text-align: center; }
+	section.visual p.desc > br { display: none; }
+
+	section.progress h2 { margin: 1.953125vh 0 1em; }
+	section.progress .img_wrap { position: relative; width: 100%; height: 56.64vh; }
+	section.progress .img_wrap img { width: 100%; height: 100%; object-fit: cover; }
+	section.progress .info_wrap { position: absolute; left: 7.8125vw; top: 6.152vh; }
+	section.progress .info_wrap > h3 { margin: 0.5em 0; color: #fff; font-family: "NotoSansKR-Bold"; font-style: normal; font-size: 2.5em; line-height: 1.3; }
+	section.progress .info_wrap > p { color: #fff; font-family: "NotoSansKR-Medium"; font-size: 1.25em; }
+	section.progress .info_wrap br { display: none; }
+
+	section.ended { margin-bottom: 31.25vh; }
+	section.ended h2 { margin: 11.71875vh 0 1em; }
+	section.ended ul { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px 20px; width: 100%; margin-bottom: 80px; }
+	section.ended ul > li { flex: 1 1 48%; border: 1px solid #333; background: #fff; }
+	section.ended ul > li > a { display: block; width: 100%; }
+	section.ended ul > li > a img { width: 100%; object-fit: cover; }
+	section.ended ul > li .info_wrap { padding: 1.25em; border-top: 1px solid #333; }
+	section.ended ul > li .info_wrap > span { margin-bottom: 0.9375em; font-size: 0.875em }
+	section.ended ul > li .info_wrap > p.date { font-size: 0.875em; }
+	section.ended ul > li .info_wrap > p.title { font-family: "NotoSansKR-Bold"; font-size: 1.125em; }
+	section.ended .btn_more { display: block; margin: 0 auto; font-size: 1.25em; }
+
+
+}
+/* ============================== Tablet (end) ============================== */
+/*	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   J I J U   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!			   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ============================= Desktop (start) ============================= */
+@media screen and (min-width: 1025px){
+
+
+	.btn_more[class~="_L"] { padding: 0.8125em 2.5em 1.0625em; }
+
+	.category[class~="_M"] { padding: 0.3125em 0.4375em; }
+	.category[class~="_L"] { padding: 0.571428em 0.95238em; }
+
+	h2 { font-size: 3.75em; }
+
+	section.visual h2 { margin-top: 21.0416vh; font-size: 4.5em }
+	section.visual h2::before { width: 1.3333em; height: 1.30555em; }
+	section.visual .img_wrap { width: 100%; height: 31.25vh; margin: 40px 0 50px; }
+	section.visual .img_wrap img { width: 100%; height: 100%; object-fit: cover; }
+	section.visual p.desc { font-family: "NotoSansKR-Medium"; font-size: 1.5em; text-align: center; }
+	section.visual p.desc > br { display: none; }
+
+	section.progress h2 { margin: 6.25vh 0 1em; }
+	section.progress .img_wrap { position: relative; width: 100%; height: 62.5vh; }
+	section.progress .img_wrap img { width: 100%; height: 100%; object-fit: cover; }
+	section.progress .info_wrap { position: absolute; left: 6.77083vw; top: 50%; transform: translateY(-50%); }
+	section.progress .info_wrap > span { font-size: 1.3125em; }
+	section.progress .info_wrap > h3 { margin: 0.166em 0 0.5em; color: #fff; font-family: "NotoSansKR-Bold"; font-style: normal; font-size: 3.75em; line-height: 1.3; }
+	section.progress .info_wrap > p { color: #fff; font-family: "NotoSansKR-Medium"; font-size: 1.75em; }
+	section.progress .info_wrap br { display: none; }
+
+	section.ended { margin-bottom: 31.25vh; }
+	section.ended h2 { margin: 18.75vh 0 1em; }
+	section.ended ul { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 50px 24px; width: 100%; margin-bottom: 80px; }
+	section.ended ul > li { flex: 1 1 30%; border: 1px solid #333; background: #fff; }
+	section.ended ul > li > a { display: block; width: 100%; }
+	section.ended ul > li > a img { width: 100%; object-fit: cover; }
+	section.ended ul > li .info_wrap { padding: 1.25em; border-top: 1px solid #333; }
+	section.ended ul > li .info_wrap > span { margin-bottom: 0.9375em; }
+	section.ended ul > li .info_wrap > p.date { font-size: 1.125em; }
+	section.ended ul > li .info_wrap > p.title { font-family: "NotoSansKR-Bold"; font-size: 1.5em; }
+	section.ended .btn_more { display: block; margin: 0 auto; font-size: 1.5em; }
+
+
+}
+/* ============================== Desktop (end) ============================== */
